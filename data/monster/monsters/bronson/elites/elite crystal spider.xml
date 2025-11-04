@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Crystal Spider" nameDescription="uma elite crystal spider" race="undead" experience="0" speed="360" manacost="0">
+  <health now="3600" max="3600"/>
+  <look type="263" head="0" body="0" legs="0" feet="0" corpse="7344"/>
+  <targetchange interval="7000" chance="10"/>
+  <strategy attack="100" defense="100"/>
+  
+<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="1"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1700" min="-100" max="-240"/>
+
+	<attack name="speed" interval="2500" chance="20" range="7" radius="1" target="1" speedchange="-600" duration="7000">
+		<attribute key="shootEffect" value="energy"/>
+		<attribute key="areaEffect" value="bluebubble"/>
+	</attack>
+
+	<attack name="energy" interval="750" chance="99" range="7" min="-20" max="-40">
+		<attribute key="shootEffect" value="energy"/>
+		<attribute key="areaEffect" value="energyarea"/>
+	</attack>
+
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="speed" interval="5000" chance="20" speedchange="300" duration="4000">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+</defenses>
+
+<immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+	<immunity drown="0"/>
+	<immunity ice="1"/>
+	<immunity holy="0"/>
+	<immunity death="1"/>
+	<immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+<voices interval="1700" chance="5">
+</voices>
+  
+<loot>
+	<item id="2086" chance="15000" actionId="2034"/> 
+</loot>
+  
+</monster>

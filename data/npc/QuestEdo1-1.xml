@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<npc name="Horatius" script="QuestEdo1-1.lua" access="5" walkinterval="0">
+	<mana now="10" max="10"/>
+	<health now="1000" max="1000"/>
+	<look type="151" head="60" body="25" legs="38" feet="62" addon="0" corpse="3128"/>
+</npc>

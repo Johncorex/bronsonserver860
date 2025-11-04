@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Tasker" script="taskdaily.lua" walkinterval="0" floorchange="0">
+<health now="150" max="150"/>
+<look type="129" head="94" body="116" legs="97" feet="2" addons="3"/>
+<parameters>
+<parameter key="message_greet" value="Ola |PLAYERNAME|. Estou encarregado de entregar missoes aos jogadores. Voce gostaria de realizar uma {task}? Ou voce deseja {receber} algum premio?"/>
+<parameter key="message_farewell" value="Ate mais." />
+		<parameter key="message_walkaway" value="Ate mais." />
+        </parameters>
+</npc>

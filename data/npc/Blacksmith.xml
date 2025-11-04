@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<npc name="Blacksmith" script="promoMiner.lua" access="5" lookdir="2" speed="80">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="131" head="95" body="97" legs="97" feet="116" addon="0" corpse="3128"/>
+</npc>

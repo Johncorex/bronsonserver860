@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Medusa" nameDescription="a medusa" race="blood" experience="8000" speed="541" manacost="0">
+  <health now="12500" max="12500" />
+  <look type="330" corpse="10524" />
+  <targetchange interval="5000" chance="8" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="275" />
+  </flags>
+  <attacks>
+    <attack name="death" interval="1700" chance="35" range="10" target="1" radius="2" min="-800" max="-900">
+      <attribute key="shootEffect" value="suddendeath" />
+      <attribute key="areaEffect" value="mortarea" />
+    </attack>
+    <attack name="speed" interval="1500" chance="25" range="7" radius="3" speedchange="-400" duration="2000">
+      <attribute key="areaEffect" value="greenbubble" />
+    </attack>
+    <attack name="speed" interval="2100" chance="20" range="7" duration="3000" speedchange="-800">
+      <attribute key="areaEffect" value="redshimmer" />
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="25">
+    <defense name="healing" interval="1400" chance="18" min="200" max="400">
+      <attribute key="areaEffect" value="blueshimmer" />
+    </defense>
+  </defenses>
+  <elements>
+    <element energyPercent="55" />
+    <element earthPercent="80" />
+    <element icePercent="55" />
+    <element firePercent="20" />
+    <element holyPercent="55" />
+  </elements>
+  <immunities>
+    <immunity death="1" />
+    <immunity invisible="1" />
+    <immunity paralyze="1" />
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="You will ssuch a fine ssstatue!" />
+    <voice sentence="There isss no chhhanccce of esscape" />
+    <voice sentence="Are you tired or why are you moving that slow?" />
+  </voices>
+  <loot>
+    <item name="gold coin" countmax="100" chance="100000" />
+	<item name="gold coin" countmax="100" chance="100000" />
+	<item name="gold coin" countmax="100" chance="100000" />
+    <item name="magic steel helmet" chance="50" />
+    <item name="zenit shoes" chance="70" />
+    <item name="medusa shield" chance="1000" />
+    <item name="bag" chance="100000">
+      <inside>
+        <item name="platinum coin" countmax="1" chance="63333" />
+        <item name="small amethyst" countmax="3" chance="2000" />
+        <item name="master archers armor" chance="350" />
+        <item name="giant sword" chance="1200" />
+        <item name="chain legs" chance="10000" />
+      </inside>
+    </item>
+  </loot>
+</monster>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Frost Dragon" nameDescription="um elite frost dragon" race="undead" experience="0" speed="385" manacost="0">
+  <health now="6000" max="6000"/>
+  <look type="248" head="20" body="30" legs="40" feet="50" corpse="7091"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+
+<attacks>
+	<attack name="melee" interval="1700" min="-120" max="-300"/>
+
+	<attack name="physical" interval="1750" chance="25" length="6" spread="4" min="-120" max="-220">
+		<attribute key="areaEffect" value="bluebubble"/>
+		<attribute key="areaEffect" value="poff"/>
+	</attack>
+
+	<attack name="physical" interval="2170" chance="75" range="7" radius="4" target="1" min="-130" max="-220">
+		<attribute key="shootEffect" value="energy"/>
+		<attribute key="areaEffect" value="poff"/>
+	</attack>
+
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="3500" chance="25" min="57" max="93">
+	<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+</defenses>
+
+<immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+	<immunity drown="0"/>
+	<immunity ice="1"/>
+	<immunity holy="0"/>
+	<immunity death="1"/>
+	<immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="1"/>
+</immunities>
+
+<voices interval="5000" chance="10">
+</voices>
+
+<loot>
+	<item id="2086" chance="20000" actionId="2035"/> 
+</loot>
+
+</monster>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="High Elf" nameDescription="an high elf" race="blood" experience="2000" speed="330" manacost="0">
+  <health now="1900" max="1900"/>
+  <look type="63" head="0" body="0" legs="0" feet="0" corpse="6011"/>
+  <targetchange interval="1700" chance="5"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="3"/>
+    <flag runonhealth="200"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1600" chance="100" min="-152" max="-200"/>
+    <attack name="holy" interval="2320" chance="35" range="7" radius="4" target="1" min="-150" max="-190">
+      <attribute key="shootEffect" value="holy"/>
+      <attribute key="areaEffect" value="holyarea"/>
+    </attack>
+    <attack name="physical" interval="1600" chance="99" range="7" target="0" min="-90" max="-180">
+      <attribute key="shootEffect" value="arrow"/>
+    </attack>
+    <attack name="holy" interval="2530" chance="45" range="7" radius="1" target="1" min="-250" max="-350">
+      <attribute key="shootEffect" value="flammingarrow"/>
+      <attribute key="areaEffect" value="holyarea"/>
+    </attack>
+  </attacks>
+  <defenses armor="15" defense="15"/>
+  <elements>
+    <element physicalPercent="5"/>
+    <element energyPercent="60"/>
+    <element earthPercent="20"/>
+    <element firePercent="20"/>
+    <element icePercent="30"/>
+    <element holyPercent="85"/>
+    <element deathPercent="-15"/>
+  </elements>
+  <immunities>
+    <immunity paralyze="1"/>
+    <immunity outfit="0"/>
+    <immunity invisible="1"/>
+    <immunity bleed="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Salute to Gil-galad!!!"/>
+    <voice sentence="Elen sila lumenn' omentielvo.!"/>
+    <voice sentence="Wisdom guides our path"/>
+    <voice sentence="Go back to Rivendell poor creature!!!"/>
+  </voices>
+  <loot>
+    <item name="elven armor" chance="1200"/>
+    <item name="golden armor" chance="50"/>
+    <item name="elven legs" chance="1250"/>
+    <item name="aghanim boots" chance="200"/>
+    <item name="elven bow" chance="700"/>
+    <item name="small amethyst" countmax="3" chance="1900"/>
+    <item name="gold coin" countmax="80" chance="100000"/>
+    <item name="gold coin" countmax="80" chance="100000"/>
+    <item name="burst arrow" countmax="1" chance="600"/>
+    <item name="arrow" countmax="12" chance="6000"/>
+    <item name="sniper arrow" countmax="1" chance="4200"/>
+    <item name="onyx arrow" countmax="1" chance="4200"/>
+    <item name="strong mana potion" chance="1600"/>
+    <item name="elvish talisman" chance="4000"/>
+  </loot>
+</monster>

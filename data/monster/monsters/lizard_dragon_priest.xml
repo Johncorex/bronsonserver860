@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Dragon Priest" nameDescription="a lizard dragon priest" race="blood" experience="4850" speed="380">
+	<health now="4500" max="4500" />
+	<look type="339" corpse="11280" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="4" />
+		<flag staticattack="90" />
+		<flag runonhealth="50" />
+		<flag canwalkonenergy="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1900" min="-224" max="-360"/>
+		
+		<attack name="poison" interval="2300" chance="25" range="5" min="-180" max="-280">
+			<attribute key="shootEffect" value="earth"/>
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		
+		<attack name="fire" interval="2600" chance="35" target="1" range="6" spread="5" min="-160" max="-230">
+			<attribute key="shootEffect" value="redstar"/>
+			<attribute key="areaEffect" value="fireattack"/>
+		</attack>
+		
+		<attack name="poison" interval="3150" chance="45" target="1" range="6" spread="5" min="-100" max="-150">
+			<attribute key="shootEffect" value="earth"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		
+		<attack name="poisoncondition" interval="6100" chance="30" range="1" target="1" start="300">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+	</attacks>
+
+	<defenses armor="0" defense="0"/>
+	<elements>
+		<element firePercent="75"/>
+		<element earthPercent="85"/>
+		<element energyPercent="10"/>
+		<element icePercent="15"/>
+		<element holyPercent="20"/>
+	    <element deathPercent="20"/>
+	     <element physicalPercent="20"/>
+	</elements>
+	
+	<immunities>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	    <immunity paralyze="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Dragon Hatchling" interval="1700" chance="20" max="2" />
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="I ssssmell warm blood!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="88" chance="100000" />
+		<item name="small amethyst" countmax="3" chance="5000" />
+		<item name="platinum coin" countmax="2" chance="3000" />
+		<item name="yellow gem" chance="2000" />
+		<item name="life ring" chance="1770" />
+		<item name="terra rod" chance="5000" />
+		<item name="lizard leather" chance="1980" />
+		<item name="lizard scale" chance="2130" />
+		<item name="strong mana potion" chance="2910" />
+		<item name="great mana potion" chance="2940" />
+		<item name="crocodile boots" chance="1050" />
+		<item name="earthborn titan armor" chance="510" />
+		<item name="dragon scale legs" chance="300" />
+		<item name="royal helmet" chance="600" />
+		<item name="terra amulet" chance="500" />
+	</loot>
+</monster>

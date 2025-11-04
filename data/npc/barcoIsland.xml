@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<npc name="Turtle" script="barcoLocations.lua" access="3" lookdir="2" speed="60" walkinterval="0">
+	<mana now="1000" max="1000"/>
+	<health now="10" max="10"/>
+	<look type="151" head="21" body="66" legs="9" feet="114" addons="0" corpse="3128"/>
+</npc>

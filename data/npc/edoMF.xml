@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Fluidhea" script="shop_potions.lua" access="3" lookdir="2" speed="50" walkinterval="10000">
+  <mana now="10" max="10"/>
+  <health now="10" max="10"/>
+  <look type="138" head="43" body="71" legs="96" feet="0" addons="1" corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola |PLAYERNAME|, eu vendo mana potion, strong mana potion, great mana potion, great spirit potion e ultimate spirit potion"/>
+  </parameters>
+</npc>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lord of the Elements" nameDescription="Lord of the Elements" race="undead" experience="650000" speed="350" manacost="0">
+  <health now="250000" max="250000"/>
+  <look type="242" corpse="8967"/>
+  <targetchange interval="4500" chance="80"/>
+  <strategy attack="100" defense="0"/>
+  
+  <flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="1"/>
+	<flag targetdistance="3"/>
+	<flag staticattack="90"/>
+	<flag runonhealth="20500"/>
+  </flags>
+  
+<attacks>
+	<attack name="melee" interval="1350" min="-1160" max="-1760"/>
+	
+	<attack name="manadrain" interval="2750" chance="35" range="7" min="-800" max="-1300">
+		<attribute key="areaEffect" value="yalaharighost"/>
+	</attack>
+	
+	<attack name="poison" interval="2153" chance="45" radius="6" target="0" min="-1450" max="-2350">
+		<attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+	
+	<attack name="energy" interval="2355" chance="55" radius="3" target="1" min="-950" max="-2350">
+		<attribute key="shootEffect" value="flasharrow"/>
+		<attribute key="areaEffect" value="yellowenergy"/>
+	</attack>
+	
+	<attack name="fire" interval="2658" chance="75" length="8" spread="3" target="0" min="-1350" max="-2150">
+		<attribute key="areaEffect" value="fireattack"/>
+	</attack>
+	
+	<attack name="speed" interval="5400" chance="35" range="7" speedchange="-750" duration="6000">
+		<attribute key="areaEffect" value="giantice"/>
+	</attack>
+	
+	<attack name="ice" interval="3009" chance="85" range="7" radius="2" target="1" min="-1400" max="-2020">
+		<attribute key="shootEffect" value="ice"/>
+		<attribute key="areaEffect" value="icetornado"/>
+	</attack>
+	
+</attacks>
+
+
+<defenses armor="0" defense="0">
+
+		<defense name="healing" interval="4220" chance="35" min="250" max="650">
+			<attribute key="areaEffect" value="holydamage"/>
+		</defense>
+	
+		<defense name="invisible" interval="6000" chance="20" duration="5000">
+			<attribute key="areaEffect" value="poff"/>
+		</defense>
+	
+		<defense name="outfit" interval="2500" chance="20" monster="defiler" duration="10000">
+		  <attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		
+		<defense name="outfit" interval="2500" chance="20" monster="frost torog" duration="10000">
+		  <attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		
+		<defense name="outfit" interval="2500" chance="20" monster="energy overlord" duration="10000">
+		  <attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+</defenses>
+
+<elements>
+	<element physicalPercent="60"/>
+	<element icePercent="75"/>
+	<element poisonPercent="75"/>
+	<element firePercent="75"/>
+	<element energyPercent="75"/>
+	<element holyPercent="70"/>
+	<element deathPercent="60"/>
+</elements>
+
+<immunities>
+	<immunity drown="1"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+<summons maxSummons="0">
+</summons>
+
+<voices interval="5000" chance="20">
+
+</voices>
+  
+	<loot>
+		<item id="2091" actionId="3070" chance="100000"/> 
+		<item name="zenit helmet" chance="2800" />
+		<item name="khel thuzad skin" chance="1500" /> 
+		<item name="zenit legs" chance="2800" />
+		<item name="golden boots" chance="600" />
+		<item name="blessed shield" chance="600" />
+		<item name="gandalf ring" chance="30000" />
+		<item name="red backpack" chance="100000" >
+			<item name="crystal coin" chance="30000" countmax="2" />
+			<item name="talon" chance="50000" countmax="3" />
+			<item name="small ruby" chance="40000" countmax="6" />
+			<item name="small emerald" chance="40000" countmax="6" />
+			<item name="small amethyst" chance="40000" countmax="6" />
+			<item name="small diamond" chance="40000" countmax="6" />
+		</item>
+	</loot>
+</monster>

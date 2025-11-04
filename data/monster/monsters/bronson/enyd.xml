@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<monster name="Enyd" nameDescription="a enyd" race="undead" experience="3400" speed="490" manacost="0">
+  <health now="6100" max="6100"/>
+  <look type="320" head="0" body="0" legs="0" feet="0" addons="0" corpse="9915"/>
+  <targetchange interval="3000" chance="20"/>
+  <strategy nearest="70" health="10" damage="10" random="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    
+    <flag illusionable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+    
+    
+    <flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  <light level="0" color="0"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="The sunlight is so depressing."/>
+    <voice sentence="I've been in the shadow under your bed last night."/>
+    <voice sentence="You never know what hides in the night."/>
+    <voice sentence="I remember your face - and I know where you sleep."/>
+    <voice sentence="You will face a cruel fate!"/>
+  </voices>
+  <loot>
+    <item name="gold coin" chance="80000" countmax="25"/>
+    <item name="gold coin" chance="80000" countmax="35"/>
+    <item name="infernal bolt" chance="100" countmax="1"/>
+    <item name="aghanim boots" chance="500"/>
+    <item name="diadem of twilight" chance="80"/>
+    <item name="greenwood coat" chance="900"/>
+    <item name="blue legs" chance="80"/>
+    <item name="amazon shield" chance="400"/>
+    <item name="haunted blade" chance="600"/>
+    <item name="strong mana potion" chance="1000"/>
+    <item name="platinum coin" chance="1000" countmax="4"/>
+  </loot>
+  <attacks>
+    <attack name="melee" interval="1800" chance="100" min="-360" max="-656"/>
+    <attack name="speed" interval="3200" chance="30" speedchange="-900" range="7" shootEffect="smallstone" effect="stun" target="1" duration="3000"/>
+    <attack name="earth" interval="2100" chance="45" min="-300" max="-760" effect="smallplants"/>
+    <attack name="earth" interval="1700" chance="25" min="-350" max="-860" effect="bigplants"/>
+    <attack name="physical" interval="2500" chance="50" min="-500" max="-880" effect="stones" target="1"/>
+  </attacks>
+  <defenses armor="60" defense="35">
+    <defense name="speed" interval="1700" chance="25" speedchange="120" effect="magic_green" target="0" duration="5000"/>
+    <defense name="invisible" interval="1700" chance="25" effect="yellow_rings" target="0"/>
+  </defenses>
+  <elements>
+    <element physicalPercent="5"/>
+    <element energyPercent="40"/>
+    <element earthPercent="95"/>
+    <element firePercent="10"/>
+    <element lifedrainPercent="25"/>
+    <element manadrainPercent="25"/>
+    <element drownPercent="100"/>
+    <element icePercent="25"/>
+    <element holyPercent="20"/>
+    <element deathPercent="50"/>
+  </elements>
+  <immunities>
+    <immunity name="paralyze"/>
+    <immunity name="invisible"/>
+    <immunity name="bleed"/>
+  </immunities>
+</monster>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="soul burner" nameDescription="a soul burner" race="fire" experience="22000" speed="465" manacost="0">
+  <health now="20800" max="20800" />
+  <look type="243" corpse="6324" />
+  <targetchange interval="5000" chance="10" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="4" />
+    <flag staticattack="90" />
+    <flag runonhealth="2000" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" skill="135" attack="135" />
+    <attack name="fire" interval="1000" chance="50" range="5" radius="2" target="1" min="-400" max="-590">
+      <attribute key="shootEffect" value="flammingarrow" />
+      <attribute key="areaEffect" value="explosionarea" />
+    </attack>
+    <attack name="fire" interval="1700" chance="70" range="7" radius="5" target="0" min="-900" max="-1150">
+      <attribute key="shootEffect" value="fire" />
+      <attribute key="areaEffect" value="redfirework" />
+    </attack>
+    <attack name="fire" interval="1500" chance="50" range="5" radius="2" target="1" min="-400" max="-500">
+      <attribute key="areaEffect" value="firearea" />
+      <attribute key="shootEffect" value="fire" />
+    </attack>
+  </attacks>
+  <defenses armor="35" defense="35" />
+  <elements>
+    <element energyPercent="55" />
+    <element earthPercent="80" />
+    <element icePercent="10" />
+    <element deathPercent="70" />
+    <element holyPercent="15" />
+  </elements>
+  <immunities>
+    <immunity fire="1" />
+    <immunity invisible="1" />
+    <immunity paralyze="1" />
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Fire!" />
+  </voices>
+  <loot>
+    <item name="gold coin" countmax="100" chance="100000" />
+	<item name="crystal coin" countmax="1" chance="1500" />
+    <item name="small ruby" countmax="3" chance="3000" />
+    <item name="soul orb" chance="2222" />
+    <item name="burnt scroll" chance="20000" />
+	<item name="phoenix plate" chance="150" />
+	<item name="phoenix shield" chance="200" />
+    <item name="wand of inferno" chance="4000" />
+    <item name="bag" chance="100000">
+      <inside>
+        <item name="blank rune" chance="13500" />
+        <item name="fire axe" chance="1200" />
+        <item name="thunder hammer" chance="30" />
+        <item name="magma legs" chance="3000" />
+        <item name="small diamond" countmax="1" chance="35000" />
+        <item name="fire sword" chance="7000" />
+      </inside>
+    </item>
+  </loot>
+</monster>

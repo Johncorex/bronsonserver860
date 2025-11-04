@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<npc name="Pwon" script="default.lua" access="3" lookdir="2" speed="50">
+	<mana now="100" max="100"/>
+	<health now="1500" max="1500"/>
+	<look type="251" head="116" body="121" legs="5" feet="114" addon="0" corpse="3128"/>
+	
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_sellable" value="rainbow trout,7158,50" />
+		<parameter key="shop_buyable" value="" />
+		
+		<parameter key="message_greet" value="Ola |PLAYERNAME|, eu compro rainbow trout"/>
+	</parameters>
+	
+</npc>

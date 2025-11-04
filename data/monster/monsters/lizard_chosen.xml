@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Chosen" nameDescription="a lizard chosen" race="blood" experience="7000" speed="425">
+	<health now="10500" max="10500" />
+	<look type="344" corpse="11288" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="50" />
+		<flag canwalkonenergy="1" />
+		<flag canwalkonfire="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1900" min="-160" max="-320"/>
+		
+		<attack name="melee" interval="8000" min="-200" max="-480" chance="80">
+			<attribute key="areaEffect" value="stun"/>
+		</attack>
+		
+		<attack name="poison" interval="1800" chance="40" range="7" radius="3" target="1" min="-200" max="-500">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		
+		<attack name="physical" interval="1700" chance="45" range="7" radius="3" target="1" min="-200" max="-550">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		
+		<attack name="physical" interval="2200" chance="50" target="0" radius="2" min="-300" max="-600">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		
+		<attack name="poisoncondition" interval="6100" chance="60" range="1" target="1" start="300">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+	</attacks>
+
+	<defenses armor="0" defense="0"/>
+	
+	<elements>
+		<element firePercent="30"/>
+		<element earthPercent="85"/>
+		<element energyPercent="20"/>
+		<element icePercent="30"/>
+		<element holyPercent="30"/>
+	    <element deathPercent="40"/>
+	     <element physicalPercent="30"/>
+	</elements>
+	
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grzzzzzzz!" />
+		<voice sentence="Garrrblarrrrzzzz!" />
+		<voice sentence="Kzzzzzz!" />
+	</voices>
+	<loot>
+		<item name="small diamond" countmax="5" chance="4550" />
+		<item name="gold coin" countmax="100" chance="99000" />
+		<item name="gold coin" countmax="100" chance="99000" />
+		<item name="gold coin" countmax="36" chance="99000" />
+		<item name="platinum coin" countmax="5" chance="4020" />
+		<item name="terra boots" chance="1550" />
+		<item name="lizard leather" chance="2000" />
+		<item name="lizard scale" countmax="3" chance="980" />
+		<item name="great health potion" countmax="3" chance="2350" />
+		<item name="Zenit Cuirass" chance="100" />
+		<item name="Zenit Helmet" chance="150" />
+		<item name="drachaku" chance="200" />
+		<item name="chaos mace" chance="1000" />
+		<item name="cursed shoulder spikes" chance="5800" />
+		<item name="scale of corruption" chance="2870" />
+	</loot>
+</monster>

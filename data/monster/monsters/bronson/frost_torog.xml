@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost torog" nameDescription="a frost torog" race="undead" experience="1500" speed="335" manacost="0">
+  <health now="1600" max="1600" />
+  <look type="261" corpse="7282" />
+  <targetchange interval="1700" chance="5" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag staticattack="50" />
+    <flag targetdistance="1" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" min="0" max="-180" />
+    <attack name="speed" interval="1000" chance="13" length="8" spread="0" speedchange="-800" duration="20000">
+      <attribute key="areaEffect" value="energy" />
+    </attack>
+    <attack name="physical" interval="1000" chance="15" range="7" min="0" max="-220">
+      <attribute key="shootEffect" value="largerock" />
+    </attack>
+    <attack name="melee" interval="1700" chance="15" range="7" radius="3" target="0" min="-80" max="-200">
+      <attribute key="areaEffect" value="blackspark" />
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="26" />
+  <elements>
+    <element energyPercent="10" />
+    <element earthPercent="15" />
+    <element deathPercent="5" />
+    <element firePercent="-10" />
+    <element holyPercent="20" />
+  </elements>
+  <immunities>
+    <immunity ice="1" />
+    <immunity invisible="1" />
+    <immunity paralyze="1" />
+  </immunities>
+  <voices interval="1700" chance="5">
+    <voice sentence="Chrr." />
+  </voices>
+  <loot>
+    <item name="gold coin" countmax="80" chance="80000" />
+	<item name="gold coin" countmax="80" chance="80000" />
+    <item name="black pearl" countmax="1" chance="1600" />
+    <item name="small diamond" countmax="1" chance="1600" />
+    <item name="ice cube" chance="1222" />
+    <item name="bag" chance="100000">
+      <inside>
+        <item name="small sapphire" countmax="1" chance="2100" />
+        <item name="ice rapier" chance="500" />
+        <item name="aghanim mask" chance="700" />
+        <item name="haunted blade" chance="1200" />
+        <item name="frost razor" chance="1000" />
+		<item name="crystal mace" chance="1200" />
+      </inside>
+    </item>
+  </loot>
+</monster>

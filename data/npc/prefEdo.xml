@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<npc name="Theoden" script="prefEdo.lua" access="3">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="132" head="97" body="57" legs="0" feet="58" addon="3" corpse="3128"/>
+     <parameters>
+	<parameter key="module_shop" value="1"/>
+	<parameter key="message_greet" value="Ola! Eu sou o Rei de Rohan, você gostaria de morar na cidade de Edoras?"/>
+ </parameters>
+</npc>

@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<monster name="Nightmare" nameDescription="a nightmare" race="blood" experience="2150" speed="350" manacost="0">
+  <health now="2700" max="2700"/>
+  <look type="245" head="0" body="0" legs="0" feet="0" addons="0" corpse="6341"/>
+  <targetchange interval="4000" chance="10"/>
+  <strategy nearest="70" health="10" damage="10" random="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    
+    <flag illusionable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="300"/>
+    
+    
+    <flag canwalkonenergy="0"/>
+    <flag canwalkonfire="0"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  <light level="0" color="0"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="Close your eyes... I want to show you something."/>
+    <voice sentence="I will haunt you forever!"/>
+    <voice sentence="Pffffrrrrrrrrrrrr."/>
+    <voice sentence="I will make you scream."/>
+    <voice sentence="Take a ride with me."/>
+    <voice sentence="Weeeheeheeeheee!"/>
+  </voices>
+  <loot>
+    <item name="gold coin" chance="100000" countmax="100"/>
+    <item name="gold coin" chance="100000" countmax="55"/>
+    <item name="platinum coin" chance="5000" countmax="2"/>
+    <item name="knight legs" chance="600"/>
+    <item name="soul orb" chance="20000"/>
+    <item name="magma boots" chance="400"/>
+    <item name="naginata" chance="1200"/>
+  </loot>
+  <attacks>
+    <attack name="melee" interval="1700" chance="100" min="0" max="-150"/>
+    <attack name="death" interval="1700" chance="10" type="death" min="-60" max="-120" range="7" radius="1" shootEffect="death" effect="smallclouds" target="1"/>
+    <attack name="death" interval="1700" chance="20" type="earth" min="-80" max="-170" range="7" radius="4" shootEffect="poison" effect="poisonarea" target="1"/>
+  </attacks>
+  <defenses defense="25" armor="25">
+    <defense name="healing" interval="1700" chance="10" type="healing" min="60" max="100" target="0"/>
+    <defense name="speed" interval="1700" chance="15" speedchange="420" effect="redshimmer" target="0" duration="5000"/>
+  </defenses>
+  <elements>
+    <element physicalPercent="0"/>
+    <element energyPercent="20"/>
+    <element earthPercent="100"/>
+    <element firePercent="20"/>
+    <element lifedrainPercent="100"/>
+    <element manadrainPercent="0"/>
+    <element drownPercent="0"/>
+    <element icePercent="10"/>
+    <element holyPercent="-25"/>
+    <element deathPercent="100"/>
+  </elements>
+  <immunities>
+    <immunity name="paralyze"/>
+    <immunity name="invisible"/>
+    <immunity name="bleed"/>
+  </immunities>
+</monster>

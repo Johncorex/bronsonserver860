@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<npc name="Soldado" script="edoSoldado.lua" access="3" lookdir="2" speed="60">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="131" head="78" body="68" legs="0" feet="97" addon="0" corpse="3128"/>
+</npc>

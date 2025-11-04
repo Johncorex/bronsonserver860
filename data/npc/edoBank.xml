@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<npc name="Goldstein" script="shop_bank.lua" walkinterval="0">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="132" head="4" body="40" legs="0" feet="78" addons="1" corpse="3128"/>
+<parameters>
+ <parameter key="message_greet" value="Olá |PLAYERNAME|, o que você deseja hoje? {depositar}, {sacar}, ver o {saldo} ou {transferir} seu dinheiro ?"/>
+        <parameter key="message_farewell" value="Foi um prazer te atender |PLAYERNAME|."/>
+	
+	</parameters>
+</npc>

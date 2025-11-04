@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Necromancer" nameDescription="O Necromancer" race="blood" experience="150000" speed="500" manacost="0">
+  <health now="60000" max="60000"/>
+  <look type="9" head="0" body="0" legs="0" feet="0" corpse="3058"/>
+  <targetchange interval="3000" chance="50"/>
+  <strategy attack="100" defense="0"/>
+  
+<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="3"/>
+	<flag staticattack="30"/>
+    <flag runonhealth="0"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+</flags>
+  
+<attacks>
+    <attack name="melee" interval="1700" min="-900" max="-1200"/>
+	
+    <attack name="lifedrain" interval="1750" chance="20" target="1" range="1" min="-700" max="-900">
+		<attribute key="areaEffect" value="redspark"/>
+    </attack>
+	
+	<attack name="poison" interval="1600" chance="30" target="1" range="7" min="-600" max="-900">
+		<attribute key="shootEffect" value="poison"/>
+		<attribute key="areaEffect" value="yellowbubble"/>
+    </attack>
+	
+	<attack name="poisoncondition" interval="3200" chance="50" range="7" target="1" start="65" tick="2000">
+		<attribute key="shootEffect" value="poison"/>
+	</attack>
+	
+	<attack name="death" interval="1700" chance="20" length="8" spread="0" min="-1000" max="-1500">
+		<attribute key="areaEffect" value="mortarea"/>
+	</attack>
+	
+    <attack name="poison" interval="1800" chance="40" range="8" radius="7" target="1" min="-350" max="-550">
+	 <attribute key="shootEffect" value="earth"/>
+	 <attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+</attacks>
+	
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="2000" chance="60" min="320" max="350"/>
+	
+	<defense name="invisible" interval="6000" chance="50" duration="5000">
+		<attribute key="areaEffect" value="poff"/>
+	</defense>
+</defenses>
+  
+<elements>
+	<element physicalPercent="30"/>
+	<element icePercent="30"/>
+	<element poisonPercent="90"/>
+	<element firePercent="30"/>
+	<element energyPercent="30"/>
+	<element holyPercent="20"/>
+	<element deathPercent="30"/>
+</elements>
+
+<immunities>
+	<immunity drown="0"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+  <summons maxSummons="8">
+    <summon name="banshee" interval="3000" chance="30" max="3"/>
+    <summon name="blightwalker" interval="2500" chance="30" max="3"/>
+    <summon name="warlock" interval="2500" chance="30" max="3"/>
+  </summons>
+  
+  
+  <voices interval="5000" chance="10">
+    <voice sentence="Nos vemos no Inferno!"/>
+    <voice sentence="Se renda ao poder de Sauron!"/>
+  </voices>
+  
+  <loot>
+    <item name="mystic turban" chance="90000"/> 
+	<item name="starlight amulet" chance="30000"/> 
+	<item name="demon legs" chance="3000"/> 
+	<item name="demon helmet" chance="3000"/> 
+	<item name="demon armor" chance="3000"/> 
+	<item name="dark lords cape" chance="3000"/>
+	<item name="soft boots" chance="1200"/> 
+ 	<item name="mastermind shield" chance="4000"/> 
+ 	<item name="haunted blade" chance="40000"/> 
+	<item name="saruman scepter" chance="6500"/> 
+ 	<item name="backpack of holding" chance="100000">
+		<item name="platinum coin" countmax="25" chance="80000"/> 
+		<item name="platinum coin" countmax="25" chance="60000"/> 
+		<item name="black pearl" countmax="15" chance="70000"/> 
+		<item name="behemoth claw" countmax="10" chance="40500"/> 			
+		<item name="shadow herb" countmax="3" chance="70000"/> 
+		<item name="soul orb" chance="45000"/> 
+		<item name="stone skin amulet" chance="40000"/> 
+		<item name="stone skin amulet" chance="40000"/> 
+		<item name="soul stone" chance="30400"/> 
+ 	</item>
+
+  </loot>
+</monster>

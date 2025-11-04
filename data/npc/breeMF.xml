@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<npc name="Winslow" script="MFbree.lua" access="3" lookdir="2" speed="70">
+	<mana now="100" max="100"/>
+	<health now="1500" max="1500"/>
+	<look type="128" head="20" body="43" legs="98" feet="78" addon="1" corpse="3128"/>
+</npc>

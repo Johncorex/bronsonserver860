@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Dragon Priest" nameDescription="um elite dragon priest" race="blood" experience="0" speed="380" manacost="0">
+<health now="4500" max="4500"/>
+<look type="339" corpse="11277"/>
+<targetchange interval="8000" chance="8"/>
+<strategy attack="100" defense="0"/>
+
+<flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="1"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="0"/>
+	<flag targetdistance="2"/>
+	<flag staticattack="90"/>
+	<flag runonhealth="550"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1900" min="-224" max="-360"/>
+	
+	<attack name="poison" interval="2300" chance="25" range="5" min="-180" max="-280">
+		<attribute key="shootEffect" value="earth"/>
+		<attribute key="areaEffect" value="greenshimmer"/>
+	</attack>
+	
+	<attack name="fire" interval="2600" chance="35" target="1" range="6" spread="5" min="-160" max="-230">
+		<attribute key="shootEffect" value="redstar"/>
+		<attribute key="areaEffect" value="fireattack"/>
+	</attack>
+	
+	<attack name="poison" interval="3150" chance="45" target="1" range="6" spread="5" min="-100" max="-150">
+		<attribute key="shootEffect" value="earth"/>
+		<attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+	
+	<attack name="poisoncondition" interval="6100" chance="30" range="1" target="1" start="300">
+		<attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+
+</attacks>
+
+	<defenses armor="0" defense="0"/>
+	<elements>
+		<element firePercent="75"/>
+		<element earthPercent="85"/>
+		<element energyPercent="20"/>
+		<element icePercent="15"/>
+		<element holyPercent="25"/>
+	    <element deathPercent="20"/>
+	    <element physicalPercent="20"/>
+	</elements>
+	
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	
+	<voices interval="5000" chance="10">
+		<voice sentence="Ssssss!"/>
+	</voices>
+	
+	<loot>
+      <item id="2086" chance="12000" actionId="2052"/>
+	</loot>
+</monster>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

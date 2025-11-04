@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<npc name="Manuel" script="edoBread.lua" access="3" walkinterval="10000">
+	<mana now="1000" max="1000"/>
+	<health now="600" max="600"/>
+	<look type="133" head="78" body="0" legs="0" feet="0" addon="0" corpse="3128"/>
+	
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_sellable" value="wheat,2694,2;flour,2692,4;dough,2693,5;bread,2689,7;brown bread,2691,9;brown mushrooms,2789,10" />
+		<parameter key="shop_buyable" value="bread,2689,10;brown bread,2691,12;brown mushrooms,2789,12" />
+
+		<parameter key="message_greet" value="Ola |PLAYERNAME|, eu compro e vendo alimentos"/>
+	</parameters>
+	
+</npc>

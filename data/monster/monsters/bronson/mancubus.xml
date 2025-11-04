@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<monster name="Mancubus" nameDescription="a mancubus" race="blood" experience="4200" speed="400" manacost="0">
+  <health now="7000" max="7000"/>
+  <look type="55" head="0" body="0" legs="0" feet="0" addons="0" corpse="5999"/>
+  <targetchange interval="4000" chance="10"/>
+  <strategy nearest="60" damage="40"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    
+    <flag illusionable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="70"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+    
+    
+    <flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  <light level="0" color="0"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="Tiny! Like a little girl!"/>
+    <voice sentence="Do you feel nostalgia?"/>
+  </voices>
+  <loot>
+    <item name="amphora" chance="200"/>
+    <item name="platinum coin" chance="60000" countmax="3"/>
+    <item name="double axe" chance="4000"/>
+    <item name="great health potion" chance="800"/>
+    <item name="crowbar" chance="30000"/>
+    <item name="big bone" chance="7000"/>
+    <item name="demon armor" chance="40"/>
+    <item name="horned helmet" chance="100"/>
+    <item name="giant sword" chance="500"/>
+    <item name="meat" chance="50000" countmax="6"/>
+    <item name="gold coin" chance="100000" countmax="80"/>
+    <item name="small amethyst" chance="5580" countmax="5"/>
+    <item name="behemoth claw" chance="1300" countmax="2"/>
+    <item name="perfect behemoth fang" chance="1600" countmax="1"/>
+  </loot>
+  <attacks>
+    <attack name="melee" interval="1700" chance="100" min="-80" max="-200"/>
+    <attack name="physical" interval="1500" chance="99" range="7" min="-100" max="-200" shootEffect="largerock" target="0">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="physical" interval="3700" chance="33" range="1" radius="5" min="-100" max="-250" effect="groundshaker" target="0"/>
+  </attacks>
+  <defenses armor="50" defense="65">
+    <defense name="speed" interval="1700" chance="15" speedchange="500" duration="5000" target="0">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+    <element physicalPercent="10"/>
+    <element energyPercent="10"/>
+    <element earthPercent="80"/>
+    <element firePercent="30"/>
+    <element lifedrainPercent="0"/>
+    <element manadrainPercent="0"/>
+    <element drownPercent="0"/>
+    <element icePercent="-10"/>
+    <element holyPercent="30"/>
+    <element deathPercent="-5"/>
+  </elements>
+  <immunities>
+    <immunity name="paralyze"/>
+    <immunity name="invisible"/>
+  </immunities>
+</monster>

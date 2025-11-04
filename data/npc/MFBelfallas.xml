@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<npc name="Ruswald" script="MFpirate.lua" access="3" lookdir="2" speed="50">
+	<mana now="100" max="100"/>
+	<health now="1500" max="1500"/>
+	<look type="134" head="78" body="19" legs="19" feet="97" addon="2" corpse="3128"/>
+</npc>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elf Soldier" nameDescription="an elf" race="blood" experience="440" speed="255" manacost="320">
+  <health now="500" max="500"/>
+  <look type="62" head="0" body="0" legs="0" feet="0" corpse="6003"/>
+  <targetchange interval="4000" chance="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" chance="100" min="-70" max="-180"/>
+    <attack name="energy" interval="1700" chance="35" range="7" min="-50" max="-80" target="0">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+  </attacks>
+  <defenses armor="6" defense="10"/>
+  <elements>
+    <element physicalPercent="5"/>
+    <element energyPercent="90"/>
+    <element earthPercent="25"/>
+    <element firePercent="20"/>
+    <element icePercent="25"/>
+    <element holyPercent="90"/>
+    <element deathPercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity invisible="1"/>
+    <immunity bleed="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Death to the Defilers!"/>
+    <voice sentence="You are not welcome here."/>
+    <voice sentence="Flee as long as you can."/>
+    <voice sentence="Bahaha aka!"/>
+    <voice sentence="Ulathil beia Thratha!"/>
+  </voices>
+  <loot>
+    <item name="gold coin" countmax="30" chance="100000"/>
+    <item name="heaven blossom" chance="1540"/>
+    <item name="plum" countmax="2" chance="40000"/>
+    <item name="elvish talisman" chance="4100"/>
+    <item name="bright sword" chance="500"/>
+    <item name="griffin shield" chance="800"/>
+    <item name="horseman helmet" chance="1000"/>
+    <item name="elven legs" chance="1100"/>
+    <item name="elven astral observer" chance="6710"/>
+  </loot>
+</monster>

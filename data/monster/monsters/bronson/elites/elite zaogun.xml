@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Zaogun" nameDescription="um elite zaogun" race="blood" experience="0" speed="460" manacost="0">
+<health now="7000" max="7000"/>
+<look type="343" corpse="11281"/>
+<targetchange interval="7000" chance="8"/>
+<strategy attack="100" defense="0"/>
+
+<flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="1"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="0"/>
+	<flag targetdistance="1"/>
+	<flag staticattack="90"/>
+	<flag runonhealth="0"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1900" min="-200" max="-320"/>
+	
+	<attack name="melee" interval="8000" min="-340" max="-540" chance="55">
+		<attribute key="areaEffect" value="stun"/>
+	</attack>
+	
+	<attack name="poison" interval="2300" chance="30" range="7" radius="3" target="1" min="-250" max="-300">
+		<attribute key="shootEffect" value="whirlwindclub"/>
+		<attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+	
+	<attack name="physical" interval="2500" chance="30" range="7" radius="3" target="1" min="-250" max="-300">
+		<attribute key="shootEffect" value="whirlwindclub"/>
+		<attribute key="areaEffect" value="poff"/>
+	</attack>
+	
+	<attack name="physical" interval="2800" chance="35" target="0" radius="2" min="-200" max="-250">
+		<attribute key="areaEffect" value="redspark"/>
+	</attack>
+	
+	<attack name="poisoncondition" interval="6100" chance="30" range="1" target="1" start="300">
+		<attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+
+</attacks>
+
+	<defenses armor="0" defense="0"/>
+	
+	<elements>
+		<element firePercent="25"/>
+		<element earthPercent="85"/>
+		<element energyPercent="20"/>
+		<element icePercent="25"/>
+		<element holyPercent="25"/>
+	    <element deathPercent="20"/>
+	     <element physicalPercent="20"/>
+	</elements>
+	
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	
+	<voices interval="5000" chance="10">
+		<voice sentence="Ssssss!"/>
+	</voices>
+	
+	<loot>
+      <item id="2086" chance="14000" actionId="2054"/>
+	</loot>
+</monster>
+
+
+
+
+
+
+
+
+
+
+

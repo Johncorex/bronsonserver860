@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="David Nelson" nameDescription="a david nelson" race="blood" experience="2000" speed="145" manacost="99999">
+  <health now="2000" max="2000"/>
+  <look type="69" head="0" body="0" legs="0" feet="0" corpse="6007"/>
+  <targetchange interval="4000" chance="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" chance="100" min="-150" max="-300"/>
+  </attacks>
+  <defenses armor="8" defense="10"/>
+  <elements>
+    <element physicalPercent="20"/>
+    <element energyPercent="10"/>
+    <element earthPercent="20"/>
+    <element firePercent="5"/>
+    <element icePercent="5"/>
+    <element holyPercent="15"/>
+    <element deathPercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity paralyze="1"/>
+    <immunity outfit="0"/>
+    <immunity invisible="1"/>
+    <immunity bleed="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Words are like bullets!"/>
+    <voice sentence="Wanna fight with me? little girl!"/>
+  </voices>
+  <loot>
+    <item name="dwarven helmet" chance="2000"/>
+    <item name="dwarven armor" chance="2000"/>
+    <item name="dwarven legs" chance="2000"/>
+    <item name="double axe" chance="30000"/>
+    <item name="battle shield" chance="32300"/>
+    <item name="small emerald" countmax="3" chance="750"/>
+    <item name="small amethyst" countmax="3" chance="750"/>
+    <item name="white mushroom" countmax="15" chance="100000"/>
+    <item name="platinum coin" countmax="4" chance="65000"/>
+    <item name="dwarven ring" chance="2000"/>
+  </loot>
+</monster>

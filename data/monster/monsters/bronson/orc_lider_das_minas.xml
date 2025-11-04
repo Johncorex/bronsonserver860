@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orc Lider das Minas" nameDescription="um lider de mina" race="blood" experience="2500" speed="425">
+	<health now="3200" max="3200" />
+	<look type="2" corpse="6008" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="40" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="1" />
+		<flag canwalkonpoison="1" />
+		<flag canwalkonfire="1" />
+	</flags>
+	  <attacks>
+		<attack name="melee" interval="1700" min="-80" max="-250" />
+		<attack name="strength" interval="1500" chance="15" min="-300" max="-420">
+		  <attribute key="shootEffect" value="whirlwindaxe"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="25" range="7" radius="4" target="1" max="-480">
+		  <attribute key="shootEffect" value="fire"/>
+		  <attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="speed" interval="4400" chance="25" range="7" speedchange="-500" duration="4000" target="0">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="1700" chance="60" range="7" min="-130" max="-250" target="0">
+			<attribute key="areaEffect" value="redshimmer"/>
+			<attribute key="shootEffect" value="LARGEROCK" />
+		</attack>
+	  </attacks>
+	<defenses armor="28" defense="28">
+		<defense name="invisible" interval="1700" chance="5" duration="900">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="1700" chance="15" speedchange="250" duration="5000">
+		  <attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element energyPercent="20"/>
+		<element earthPercent="15"/>
+		<element lifedrainPercent="25"/>
+		<element manadrainPercent="25"/>
+		<element icePercent="10"/>
+		<element holyPercent="10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	  <immunities>
+			<immunity invisible="1"/>
+			<immunity fire="1"/>
+			<immunity paralyze="1"/>
+	  </immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Em breve os humanos serao extintos!" />
+		<voice sentence="Enxofre e carvao alimentaram a nova tecnologia orc!" />
+		<voice sentence="Lama, sangue e odio" />
+	</voices>
+	<loot>
+		<item name="orc leather" chance="40000" />
+		<item name="gold coin" countmax="100" chance="60000" />
+		<item name="platinum coin" countmax="2" chance="14000" />
+		<item name="orc tooth" chance="8000" />
+		<item name="skull belt" chance="10000" />
+		<item name="hunting spear" chance="2500" />
+		<item name="two handed sword" chance="5000" />
+		<item name="plate armor" chance="6000" />
+		<item name="fireborn giant armor" chance="500" />
+		<item name="chaos mace" chance="700" />
+		<item name="stone skin amulet" chance="800"/>
+		<item name="dragon lance" chance="150" />
+		<item name="tower shield" chance="500" />
+
+	</loot>
+</monster>

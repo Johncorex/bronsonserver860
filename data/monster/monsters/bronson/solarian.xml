@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<monster name="Solarian" nameDescription="a solarian" race="blood" experience="12500" speed="570" manacost="0">
+  <health now="14000" max="14000"/>
+  <look type="133" head="39" body="77" legs="20" feet="114" addons="0" corpse="3058"/>
+  <targetchange interval="4000" chance="10"/>
+  <strategy attack="60" health="20" damage="20"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    
+    <flag illusionable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="3"/>
+    <flag runonhealth="0"/>
+    
+    
+    <flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  <light level="0" color="0"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="I never will fall for a little rat like you!"/>
+    <voice sentence="Do you mind, if i ... turn you into a dead body?!"/>
+    <voice sentence="Ezequiel 23:20!"/>
+  </voices>
+  <summons maxSummons="4">
+    <summon name="fire elemental" chance="50" interval="1000" max="1"/>
+  </summons>
+  <loot>
+    <item name="wand of inferno" chance="1500"/>
+    <item name="molten plate" chance="80"/>
+    <item name="magma legs" chance="500"/>
+    <item name="platinum coin" chance="90000" countmax="3"/>
+    <item name="gold coin" chance="100000" countmax="100"/>
+    <item name="stone skin amulet" chance="500"/>
+    <item name="energy ring" chance="2000"/>
+    <item name="great mana potion" chance="8760"/>
+  </loot>
+  <attacks>
+    <attack name="melee" interval="1700" chance="100" min="-200" max="-220"/>
+    <attack name="speed" interval="5400" chance="25" range="7" speedchange="-500" duration="4000" target="0">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="death" interval="1800" chance="100" type="death" min="-550" max="-770" range="7" radius="1" target="1">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="33" defense="20">
+    <defense name="healing" interval="1700" chance="20" min="50" max="100" target="0">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+    <element physicalPercent="15"/>
+    <element energyPercent="35"/>
+    <element earthPercent="40"/>
+    <element firePercent="95"/>
+    <element lifedrainPercent="25"/>
+    <element manadrainPercent="25"/>
+    <element drownPercent="100"/>
+    <element icePercent="20"/>
+    <element holyPercent="25"/>
+    <element deathPercent="25"/>
+  </elements>
+  <immunities>
+    <immunity name="paralyze"/>
+    <immunity name="invisible"/>
+  </immunities>
+</monster>

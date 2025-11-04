@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Capitan Jhon" script="default.lua" walkinterval="1700" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="151" head="94" body="94" legs="114" feet="94" addons="3" corpse="2212"/>
+    <parameters>
+        <parameter key="module_travel" value="1"/>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|! Eu posso te levar para {argond}. "/>
+        <parameter key="travel_destinations" value="argond,466,1023,6,500;"/>
+    </parameters>
+</npc>

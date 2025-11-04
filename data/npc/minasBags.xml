@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Orodreth" script="shop_backpacks.lua" access="3" walkinterval="0">
+  <mana now="100" max="100"/>
+  <health now="1500" max="1500"/>
+  <look type="128" head="75" body="26" legs="116" feet="78" addons="1"  corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola. Como posso te ajudar |PLAYERNAME|?"/>
+  </parameters>
+</npc>

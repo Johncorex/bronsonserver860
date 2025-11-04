@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<!--1000 = 1 segundo-->
+	<!-- Message broadcast -->
+	<!-- Broadcast types: warning, event, default, description, smallstatus, blueconsole, redconsole -->
+	<announce delay="1000" type="warning" message="As profundezas de Moria estremecem..." />
+	<announce delay="25000" type="warning" message="...um rugido flamejante ecoa nos saloes abandonados!" />
+	<announce delay="55000" type="warning" message="Demonios e enviados do fogo surgen aos montes!" />
+	<announce delay="180000" type="warning" message="Das sombras e do fogo surge Gurthnaur, a Sombra do Abismo, brandindo em fogo e escuridao!" />
+
+	<!-- Area spawns - you can specify raid area or use range value -->
+	<areaspawn delay="2000" fromx="979" fromy="659" fromz="11" tox="1017" toy="660" toz="11">
+		<monster name="Succubus" amount="10" />
+		<monster name="Hellfire Fighter" amount="5" />
+	</areaspawn>
+	
+	<areaspawn delay="30000" fromx="993" fromy="614" fromz="11" tox="994" toy="638" toz="11"> 
+		<monster name="Succubus" amount="10" />
+		<monster name="Hellfire Fighter" amount="5" />
+	</areaspawn>
+	
+	<areaspawn delay="120000" fromx="993" fromy="614" fromz="11" tox="994" toy="638" toz="11"> 
+		<monster name="Succubus" amount="10" />
+		<monster name="Hellfire Fighter" amount="5" />
+	</areaspawn>
+	
+	<areaspawn delay="130000" fromx="979" fromy="659" fromz="11" tox="1017" toy="660" toz="11">
+		<monster name="Succubus" amount="10" />
+		<monster name="Hellfire Fighter" amount="5" />
+	</areaspawn>
+
+	<!-- Single spawns -->
+	<singlespawn delay="180000" name="Gurthnaur" x="994" y="672" z="11" />
+</raid>

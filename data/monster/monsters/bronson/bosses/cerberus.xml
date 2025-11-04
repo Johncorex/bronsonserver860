@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cerberus" nameDescription="Cerberus" race="undead" experience="210000" speed="560" manacost="0">
+  <health now="72000" max="72000"/>
+  <look type="240" head="20" body="30" legs="40" feet="50" corpse="6332"/>
+  <targetchange interval="3000" chance="50"/>
+  <strategy attack="100" defense="100"/>
+  
+<flags>
+    
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+	<flag staticattack="40"/>
+    <flag runonhealth="0"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1700" min="-580" max="-820"/>
+	<attack name="melee" interval="2020" chance="90" min="-280" max="-400" poison="50"/>
+	<attack name="melee" interval="2040" chance="80" min="-360" max="-440" fire="60"/>
+
+	<attack name="fire" interval="2000" chance="75" range="7" target= "1" min="-670" max="-900">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="fireattack"/>
+	</attack>
+	
+	<attack name="poison" interval="2000" chance="65" length="8" spread="3" min="-900" max="-1300">
+		<attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+	
+	<attack name="death" interval="1700" chance="30" radius="6" target="0" min="-450" max="-600">
+		<attribute key="areaEffect" value="mortarea"/>
+	</attack>
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="2000" chance="60" min="300" max="400"/>
+</defenses>
+
+<elements><element physicalPercent="5"/>
+	<element physicalPercent="30"/>
+	<element icePercent="30"/>
+	<element poisonPercent="90"/>
+	<element firePercent="90"/>
+	<element energyPercent="30"/>
+	<element holyPercent="20"/>
+	<element deathPercent="90"/>
+</elements>
+
+<immunities>
+	<immunity drown="0"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+
+<voices interval="5000" chance="25">
+	<voice sentence="I'll Let you know how deep Aqueronte can be"/>
+	<voice sentence="Bring the money to pay Caronte!"/>
+</voices>
+
+<loot>
+	<item name="cerberus shield" chance="800"/>
+	<item name="demonrage sword" chance="3500"/>
+	<item name="chaos mace" chance="13000"/>
+	<item name="vile axe" chance="9000"/>
+	<item name="phoenix plate" chance="1200"/>
+	<item name="backpack of holding" chance="100000">
+		<item name="power bolt" countmax="1" chance="20000"/>
+		<item name="platinum coin" countmax="25" chance="70000"/>
+		<item name="amulet of loss" chance="30000"/>
+		<item name="demonic essence" chance="60000"/>
+		<item name="red gem" chance="50000"/>
+		<item name="small ruby" countmax="9" chance="40000"/>
+		<item name="behemoth claw" countmax="9" chance="40000"/>
+		<item name="ham" countmax="32" chance="20000"/>
+		<item name="black pearl" countmax="5" chance="90000"/>
+	</item>
+</loot>
+
+</monster>

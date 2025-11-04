@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sauron" nameDescription="Sauron" race="fire" experience="600000" speed="300" manacost="0">
+  <health now="300000" max="300000"/>
+  <look type="243" head="0" body="0" legs="0" feet="0" corpse="6324"/>
+  <targetchange interval="6000" chance="80"/>
+  <strategy attack="100" defense="0"/>
+  
+  <flags>
+    
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="1"/>
+	<flag targetdistance="1"/>
+	<flag staticattack="30"/>
+	<flag runonhealth="5000"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  
+<attacks>
+	<attack name="melee" interval="1300" min="-1800" max="-2300"/>
+	
+	<attack name="manadrain" interval="2750" chance="25" range="7" min="-900" max="-1500">
+		<attribute key="areaEffect" value="mortarea"/>
+	</attack>
+	
+	<attack name="death" interval="1700" chance="35" radius="6" target="0" min="-1900" max="-2800">
+		<attribute key="areaEffect" value="mortarea"/>
+	</attack>
+	
+	<attack name="fire" interval="1700" chance="33" radius="6" target="0" min="-1900" max="-2800">
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+	
+	<attack name="lifedrain" interval="2300" chance="30" radius="1" target="1" min="-1700" max="-2100">
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+	
+	<attack name="fire" interval="1200" chance="35" range="7" radius="2" target="1" min="-1800" max="-2700">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+	
+	<attack name="death" interval="2850" chance="22" length="7" spread="0" min="-2500" max="-3200">
+	  <attribute key="areaEffect" value="mortarea"/>
+	</attack>
+	
+</attacks>
+
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="1200" chance="30" min="300" max="500"/>
+	
+	<defense name="invisible" interval="6000" chance="20" duration="5000">
+		<attribute key="areaEffect" value="poff"/>
+	</defense>
+</defenses>
+
+<elements>
+	<element physicalPercent="70"/>
+	<element icePercent="60"/>
+	<element poisonPercent="60"/>
+	<element firePercent="99"/>
+	<element energyPercent="60"/>
+	<element holyPercent="60"/>
+	<element deathPercent="99"/>
+</elements>
+
+<immunities>
+	<immunity drown="1"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+<summons maxSummons="0">
+</summons>
+
+<voices interval="5000" chance="20">
+	<voice sentence="Gu kibum kelkum-ishi" yell="1"/>
+	<voice sentence=" burzum-ishi. Akha-gum-ishi ashi gurum" yell="1"/>
+</voices>
+  
+<loot>
+ 	<item name="24718" chance="6000"/> 
+ 	<item name="15406" unique="1" chance="600"/>
+ 	<item name="15412" unique="1" chance="1000"/> 
+	<item name="9933" chance="6000"/> 
+	<item name="8906" unique="1" chance="1200"/> 
+ 	
+ 	  
+	   	<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+		<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+		<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+		<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+		<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+		<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+		<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+		<item name="2152" countmax="85" chance1="35000" chancemax="0"/> 
+  </loot>
+</monster>

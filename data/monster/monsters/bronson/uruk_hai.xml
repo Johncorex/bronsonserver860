@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Uruk-hai" nameDescription="an uruk-hai" race="blood" experience="150" speed="180" manacost="360">
+  <health now="200" max="200"/>
+  <look type="7" head="0" body="0" legs="0" feet="0" corpse="5979"/>
+  <targetchange interval="4000" chance="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="11"/>
+    <flag canwalkonenergy="0"/>
+    <flag canwalkonfire="0"/>
+    <flag canwalkonpoison="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" chance="100" min="-20" max="-60"/>
+    <attack name="physical" interval="3150" chance="75" range="6" target="1" min="-20" max="-40">
+      <attribute key="shootEffect" value="bolt"/>
+    </attack>
+  </attacks>
+  <defenses armor="8" defense="15"/>
+  <elements>
+    <element physicalPercent="0"/>
+    <element energyPercent="10"/>
+    <element earthPercent="-10"/>
+    <element firePercent="0"/>
+    <element icePercent="0"/>
+    <element holyPercent="-5"/>
+    <element deathPercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity invisible="0"/>
+    <immunity bleed="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Alk!"/>
+    <voice sentence="Trak grrrr brik."/>
+    <voice sentence="Grow truk grrrr."/>
+  </voices>
+  <loot>
+    <item name="gold coin" countmax="50" chance="100000"/>
+    <item name="battle shield" chance="10000"/>
+    <item name="scimitar" chance="5000"/>
+    <item name="sabre" chance="8000"/>
+    <item name="double axe" chance="2000"/>
+    <item name="dark armor" chance="1000"/>
+    <item name="dark helmet" chance="1000"/>
+    <item name="bottle" chance="6000"/>
+    <item name="green flask" chance="1000"/>
+  </loot>
+</monster>

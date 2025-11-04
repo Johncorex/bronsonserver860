@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<monster name="Istari Follower" nameDescription="a istari follower" race="blood" experience="12500" speed="520" manacost="0">
+	<health now="16000" max="16000"/>
+	<look type="309" corpse="3058"/>
+	<targetchange interval="4000" chance="40"/>
+	<strategy nearest="80" health="10" damage="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag illusionable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="4"/>
+		<flag runonhealth="900"/>
+		<flag canwalkonenergy="1"/>
+		<flag canwalkonfire="1"/>
+		<flag canwalkonpoison="1"/>
+	</flags>
+	<summons maxSummons="2">
+		<summon name="stone golem" chance="10" interval="1700" max="1"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Muahahaha!!!"/>
+		<voice sentence="To the GLORY of ISTARI!!!"/>
+		<voice sentence="We believe in a better world... without you!"/>
+	</voices>
+	<loot>
+		<item name="gold coin" chance="80000" countmax="89"/>
+		<item name="gold coin" chance="80000" countmax="89"/>
+		<item name="gold coin" chance="80000" countmax="89"/>
+		<item name="pharaoh sword" chance="200"/>
+		<item name="blue robe" chance="1400"/>
+		<item name="voltage armor" chance="50"/>
+		<item name="skull staff" chance="1500"/>
+		<item name="small sapphire" chance="1950" countmax="5"/>
+		<item name="inkwell" chance="20000"/>
+		<item name="gandalf ring" chance="40"/>
+		<item name="energy ring" chance="2550"/>
+		<item name="stone skin amulet" chance="530"/>
+		<item name="great mana potion" chance="2000"/>
+		<item name="great health potion" chance="2000"/>
+		<item name="great health potion" chance="2000"/>
+		<item name="flaming arrow" chance="100"/>
+	</loot>
+	<attacks>
+		<attack name="melee" interval="1650" chance="100" min="-550" max="-850" />
+
+		<attack name="speed" interval="5400" chance="25" speedchange="-300" range="7" duration="4000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+
+		<attack name="manadrain" interval="2750" chance="50" range="7" min="-280" max="-400">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</attack>
+
+		<attack name="firefield" interval="2230" chance="33" range="3" radius="2" target="1">
+			<attribute key="shootEffect" value="fire" />
+		</attack>
+
+		<attack name="lifedrain" interval="1720" chance="30" range="7" radius="2" min="-250" max="-450" target="0">
+			<attribute key="shootEffect" value="flammingarrow" />
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+
+		<attack name="energy" interval="2320" chance="30" range="7" min="-540" max="-900" target="1">
+			<attribute key="shootEffect" value="energy" />
+		</attack>
+
+		<attack name="fire" interval="1800" chance="40" range="7" radius="2" min="-270" max="-600" target="1">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+
+		<attack name="energy" interval="2550" chance="25" length="8" spread="0" target="0">
+			<attribute key="areaEffect" value="energyarea" />
+		</attack>
+	</attacks>
+	<defenses armor="33" defense="20">
+		<defense name="healing" interval="4200" chance="20" min="455" max="190" target="0" type="healing"/>
+	</defenses>
+	<elements>
+		<element physicalPercent="-5"/>
+		<element energyPercent="70"/>
+		<element earthPercent="20"/>
+		<element firePercent="70"/>
+		<element lifedrainPercent="70"/>
+		<element manadrainPercent="70"/>
+		<element drownPercent="100"/>
+		<element holyPercent="10"/>
+		<element deathPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity name="paralyze"/>
+		<immunity name="invisible"/>
+		<immunity name="bleed"/>
+	</immunities>
+</monster>

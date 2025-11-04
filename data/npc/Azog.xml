@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Azog" script="azog.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="4" head="78" body="115" legs="23" feet="37" addons="0"/>
+<parameters>
+<parameter key="message_greet" value="Charach {|PLAYERNAME|}, Maruk Tefar Ferut Ul Azog?" />
+</parameters>
+</npc>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Emelianenko" nameDescription="Emelianenko" race="blood" experience="550000" speed="650" manacost="0">
+  <health now="40000" max="40000"/>
+  <look type="323" head="20" body="30" legs="40" feet="50" corpse="9107"/>
+  <targetchange interval="3000" chance="65"/>
+  <strategy attack="100" defense="100"/>
+  
+<flags>
+    
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="65"/>
+    <flag runonhealth="0"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1400" min="-1900" max="-2900" chance="100"/>
+	
+	<attack name="melee" interval="2170" min="-1800" max="-2800" chance="35">
+		<attribute key="areaEffect" value="stun"/>
+	</attack>
+	
+	<attack name="cursecondition" interval="2640" chance="35" target="0" tick="1200" start="250">
+		<attribute key="areaEffect" value="sleep"/>
+	</attack>
+	
+	<attack name="dash_strike" interval="4000" chance="35" range="10" target="1"/>
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="1400" chance="50" min="700" max="800"/>
+	
+	<defense name="speed" interval="2000" chance="60" speedchange="500" duration="6000">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</defense>
+</defenses>
+
+<elements>
+	<element physicalPercent="60"/>
+	<element icePercent="90"/>
+	<element poisonPercent="90"/>
+	<element firePercent="90"/>
+	<element energyPercent="90"/>
+	<element holyPercent="90"/>
+	<element deathPercent="90"/>
+</elements>
+
+<immunities>
+	<immunity drown="1"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+
+<summons maxSummons="0"/>
+
+<loot>
+	<item name="ice rapier" chance="100000"/> 
+	<item name="great shield" chance="2000"/> 
+	<item name="demonrage sword" chance="20000"/> 
+	<item name="axe of main" chance="40000"/> 
+	<item name="golden armor" chance="3000"/> 
+	<item name="golden boots" unique="1" chance="700"/> 
+	<item name="golden helmet" unique="1" chance="800"/> 
+	<item name="golden legs" unique="1" chance="2000"/> 
+</loot>
+
+</monster>

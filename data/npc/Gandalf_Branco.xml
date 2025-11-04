@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Gandalf Branco" script="gandalf_branco.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="130" head="19" body="0" legs="0" feet="57" addons="3"/>
+<parameters>
+<parameter key="message_greet" value="Ola {|PLAYERNAME|}, sou Gandalf, O Branco. Estou precisando de sua ajuda para derrotar o terrivel mago Saruman detentor de grander poder para dar inicio a jornada de recuperar o Anel de Sauron e posteriormente destrui-lo. Voce aceitar o desafio ?" />
+</parameters>
+</npc>

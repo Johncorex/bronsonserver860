@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<npc name="Ainur" script="promoElf.lua" access="3" lookdir="2" speed="60" walkinterval="0">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="63" head="38" body="73" legs="71" feet="0" addon="3" corpse="2979"/>
+</npc>

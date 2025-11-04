@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<monster name="Ancalagon" nameDescription="Ancalagon" race="undead" experience="60000" speed="560">
+<health now="50000" max="50000"/>
+<look type="231" head="20" body="30" legs="40" feet="50" corpse="6306"/>
+<targetchange speed="8000" chance="30"/>
+
+<flags>
+    
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="2500"/>
+	<flag staticattack="40"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+
+<attacks>
+	<attack name="melee" speed="1700" min="-400" max="-740"/>
+
+	<attack name="fire" interval="1850" chance="30" length="8" spread="3" target="0" min="-400" max="-950">
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+	
+	<attack name="fire" interval="2100" chance="99" range="7" radius="4" target="1" min="-400" max="-900">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+
+	<attack name="fire" interval="2000" chance="35" range="7" radius="8" min="-300" max="-900">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+	
+	<attack name="speed" interval="3000" chance="40" radius="7" target="0" speedchange="-700" duration="4000">
+		<attribute key="areaEffect" value="blackspark"/>
+	</attack>
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="2100" chance="50" min="400" max="700"/>
+</defenses>
+
+<elements><element physicalPercent="5"/>
+	<element physicalPercent="30"/>
+	<element icePercent="15"/>
+	<element poisonPercent="100"/>
+	<element firePercent="90"/>
+	<element energyPercent="70"/>
+	<element holyPercent="10"/>
+	<element deathPercent="95"/>
+</elements>
+
+<immunities>
+	<immunity drown="1"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+
+<summons maxSummons="4">
+	<summon name="dragon lord" speed="4000" chance="40"/>
+	<summon name="dragon" speed="8000" chance="30"/>
+</summons>
+
+  <loot>
+	<item name="aghanim robe" chance="8000"/> 
+	<item name="golden boots" chance="300"/> 
+	<item name="skull helmet" chance="18000"/> 
+	<item name="magma legs" chance="16000"/> 
+	<item name="demon shield" chance="13000"/> 
+	<item name="warlord sword" chance="1000"/>
+	<item name="grey backpack" chance="100000">
+		<item name="demonic essence" chance="10000"/> 
+		<item name="platinum coin" countmax="100" chance="100000"/> 
+		<item name="gold coin" countmax="100" chance="100000"/>
+		<item name="gold coin" countmax="100" chance="100000"/>
+		<item name="gold coin" countmax="100" chance="100000"/>
+		<item name="gold coin" countmax="100" chance="100000"/>
+		<item name="power bolt" countmax="1" chance="40000"/> 
+	</item>
+
+  </loot>
+
+</monster>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<npc name="Klahan" script="prefAnfa.lua" access="3">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="131" head="78" body="95" legs="19" feet="39" addon="0" corpse="3128"/>
+     <parameters>
+	<parameter key="module_shop" value="1"/>
+	<parameter key="message_greet" value="Ola! Eu sou o Conde de Anfallas, você gostaria de morar na cidade de Anfallas?"/>
+ </parameters>
+</npc>

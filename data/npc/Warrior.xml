@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Warrior" script="addon_warrior.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="134" head="5" body="15" legs="5" feet="15" addons="3"/>
+</npc>

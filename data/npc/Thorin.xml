@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Thorin" script="thorin.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="160" head="0" body="78" legs="0" feet="114" addons="3"/>
+<parameters>
+<parameter key="message_greet" value="Ola {|PLAYERNAME|}, Sou Thorin II, Escudo de Carvalho, filho de Thorin, neto de Thror rei do povo de Durin e ultimo da linhagem real de Moria. Estou procurando nobres guerreiros capazes de me ajudar a combater o mal que sucombiu meu povo e recuperar a Pedra de Arken, um dos bens mais preciosos do meu povo! Voce esta pronto para me ajudar a enfrentar o poderoso Smaug detentor da pedra e das riquezas que ele tomou?" />
+</parameters>
+</npc>

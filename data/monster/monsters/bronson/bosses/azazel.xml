@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Azazel" nameDescription="Azazel" race="blood" experience="300000" speed="650" manacost="0">
+<health now="130000" max="130000"/>
+<look type="334" corpse="11108"/>
+<targetchange interval="3000" chance="55"/>
+<strategy attack="100" defense="0"/>
+
+<flags>
+    
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="1"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="0"/>
+	<flag targetdistance="1"/>
+	<flag staticattack="30"/>
+	<flag runonhealth="0"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1550" min="-960" max="-1360"/>
+  
+	<attack name="speed" interval="5000" chance="50" range="7" radius="1" target="1" speedchange="-700" duration="10000">
+		<attribute key="shootEffect" value="greenstar"/>
+		<attribute key="areaEffect" value="stun"/>
+	</attack>
+	
+	<attack name="poison" interval="2100" chance="25" range="7" radius="3" target="1" min="-500" max="-720">
+		<attribute key="shootEffect" value="earth"/>
+		<attribute key="areaEffect" value="greenbubble"/>
+	</attack>
+	
+	<attack name="fire" interval="2320" chance="30" range="7" radius="4" target="1" min="-450" max="-700">
+		<attribute key="shootEffect" value="redstar"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+	
+	<attack name="fire" interval="2633" chance="30" length="8" spread="3" target="0" min="-750" max="-1050">
+		<attribute key="areaEffect" value="fireattack"/>
+	</attack>
+	
+	<attack name="physical" interval="2922" chance="30" range="7" radius="4" target="1" min="-550" max="-750">
+		<attribute key="shootEffect" value="whirlwindaxe"/>
+		<attribute key="areaEffect" value="redspark"/>
+	</attack>
+	
+	<attack name="physical" interval="3311" chance="35" radius="8" min="-650" max="-900">
+		<attribute key="areaEffect" value="yellowspark"/>
+	</attack>
+	
+    <attack name="physical" interval="2912" chance="35" range="7" radius="4" target="1" min="-650" max="-850">
+		<attribute key="shootEffect" value="whirlwindaxe"/>
+		<attribute key="areaEffect" value="groundshaker"/>
+	</attack>
+	
+	<attack name="outfit" interval="15534" chance="75" range="7" monster="deer" duration="15000">
+	 <attribute key="areaEffect" value="smoke"/>
+	</attack>
+      
+</attacks>
+
+	<defenses armor="0" defense="0">
+		<defense name="healing" interval="2700" chance="55" min="600" max="900">
+		<attribute key="areaEffect" value="yellowbubble"/>
+	</defense>
+
+</defenses>
+  
+<elements><element physicalPercent="5"/>
+	<element physicalPercent="70"/>
+	<element icePercent="35"/>
+	<element poisonPercent="90"/>
+	<element firePercent="90"/>
+	<element energyPercent="30"/>
+	<element holyPercent="45"/>
+	<element deathPercent="65"/>
+</elements>
+
+<immunities>
+	<immunity drown="1"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+
+  
+  <voices interval="5000" chance="30">
+    <voice sentence="Muahahahaha!!!"/>
+  </voices>
+
+<loot>
+	<item name="drachaku" chance="14000" />
+	<item name="drakinata" chance="30000" />
+	<item name="chaos blade" chance="7000" />
+	<item name="dragon scale boots" chance="5000" /> 
+	<item name="zenit helmet" chance="3000" />
+	<item name="zenit cuirass" chance="3000" />
+	<item name="zenit legs" chance="3000" />
+	<item name="warsinger bow" chance="1600" />
+	<item name="gondors piercer" chance="1000" />
+	<item name="green backpack" chance="100000">
+		<item name="dragon ham" chance="35000" countmax="35" />
+		<item name="dragon ham" chance="35000" countmax="35" />
+		<item name="small emerald" chance="50000" countmax="7" />
+		<item name="small emerald" chance="50000" countmax="7" />
+		<item name="small emerald" chance="50000" countmax="7" />
+		<item name="amulet of loss" chance="5500" />
+	</item>
+</loot>
+
+</monster>

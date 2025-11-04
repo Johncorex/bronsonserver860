@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<npc name="Falco" script="default.lua" access="3" walkinterval="10000">
+	<mana now="1000" max="1000"/>
+	<health now="600" max="600"/>
+	<look type="133" head="78" body="0" legs="0" feet="0" addon="0" corpse="3128"/>
+	
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_sellable" value="meat,2666,8;ham,2671,11" />
+		<parameter key="shop_buyable" value="meat,2666,16;ham,2671,22" />
+		
+		<parameter key="message_greet" value="Ola |PLAYERNAME|, eu compro e vendo meat e ham."/>
+	</parameters>
+	
+</npc>

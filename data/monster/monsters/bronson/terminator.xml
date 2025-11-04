@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<monster name="Terminator" nameDescription="a terminator" race="undead" experience="10000" speed="420" manacost="0">
+  <health now="13000" max="13000"/>
+  <look type="326" head="0" body="0" legs="0" feet="0" addons="0" corpse="10002"/>
+  <targetchange interval="4000" chance="10"/>
+  <strategy attack="50" health="10" damage="20" random="20"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    
+    <flag illusionable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+    
+    
+    <flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  <light level="3" color="180"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="Terminator initialized!"/>
+    <voice sentence="Hasta la vista... baby!"/>
+  </voices>
+  <loot>
+    <item name="gold coin" chance="100000" countmax="100"/>
+	<item name="platinum coin" chance="50000" countmax="4"/>
+    <item name="magic plate armor" chance="50"/>
+    <item name="warrior helmet" chance="1500"/>
+    <item name="golden legs" chance="50"/>
+    <item name="steel boots" chance="900"/>
+    <item name="warlord sword" chance="200"/>
+    <item name="small ruby" chance="5000" countmax="5"/>
+  </loot>
+  <attacks>
+    <attack name="melee" interval="1750" min="-350" max="-550"/>
+    <attack name="energy" interval="1700" chance="15" range="7" min="-200" max="-400" target="1">
+      <attribute key="shootEffect" value="energy"/>
+      <attribute key="areaEffect" value="yellowenergy"/>
+    </attack>
+    <attack name="fire" interval="1700" chance="20" range="7" min="-200" max="-400" target="1">
+      <attribute key="shootEffect" value="whirlwindclub"/>
+      <attribute key="areaEffect" value="fire"/>
+    </attack>
+    <attack name="physical" interval="1810" chance="15" range="7" min="-200" max="-400" target="1">
+      <attribute key="shootEffect" value="suddendeath"/>
+      <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+  </attacks>
+  <defenses armor="0" defense="0">
+    <defense name="speed" interval="1700" chance="15" speedchange="100" duration="5000" target="0">
+      <attribute key="areaEffect" value="redspark"/>
+    </defense>
+    <defense name="healing" interval="1700" chance="95" min="100" max="120" target="0">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+    <element physicalPercent="80"/>
+    <element energyPercent="10"/>
+    <element earthPercent="100"/>
+    <element firePercent="25"/>
+    <element lifedrainPercent="70"/>
+    <element manadrainPercent="70"/>
+    <element drownPercent="100"/>
+    <element icePercent="40"/>
+    <element holyPercent="80"/>
+    <element deathPercent="80"/>
+  </elements>
+  <immunities>
+    <immunity name="paralyze"/>
+    <immunity name="invisible"/>
+  </immunities>
+</monster>

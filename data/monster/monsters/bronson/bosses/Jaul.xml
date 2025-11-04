@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Jaul" nameDescription="a Jaul" race="blood" experience="700000" speed="400" manacost="390">
+	<health now="150000" max="150000"/>
+	<look type="444" corpse="15221"/>
+	<targetchange interval="5000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+	
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="300"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" skill="200" attack="200"/>
+		<attack name="fire" interval="3000" chance="50" radius="8" target="0" min="-700" max="-900">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>	
+		<attack name="fire" interval="1700" chance="100" range="7" min="-1000" max="-2200">
+		        <attribute key="areaEffect" value="explosionarea"/>
+                <attribute key="shootEffect" value="fire"/>       
+						</attack>
+	<attack name="speed" interval="1000" chance="20" radius="100" target="1" speedchange="-200">
+		<attribute key="areaEffect" value="poff"/>
+                </attack>
+		<attack name="earth" interval="1500" chance="100" range="7" min="-1900" max="-2200">
+			<attribute key="shootEffect" value="earth"/>
+		        <attribute key="areaEffect" value="bigplants"/>
+                </attack>
+		<attack name="manadrain" interval="1000" chance="25" range="7" min="-200" max="-350"/>
+		<attack name="energy" interval="1700" chance="30" length="7" spread="0" min="-1000" max="-1600">
+		<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+		<attack name="speed" interval="1700" chance="37" range="7" speedchange="-400" duration="20000">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+	    </attacks>
+	<defenses armor="0" defense="0">
+    <defense name="healing" interval="1000" chance="5" min="2000" max="3000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+	<elements><element physicalPercent="5"/>
+		<element physicalPercent="20"/>
+	     <element earthPercent="20"/>
+		<element deathPercent="20"/>
+		<element firePercent="100"/>
+		<element icePercent="20"/>
+		<element holyPercent="20"/>
+		<element energyPercent="100"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	    <immunity fire="1"/>
+	    <immunity energy="1"/>
+	</immunities>
+	<voices interval="1700" chance="10">
+		<voice sentence="DIE!! KENH!!"/>
+		<voice sentence="QJELL AFAR GOU JEY!!"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="10" chance="53000"/>
+        <item id="18403" chance="1500"/> 
+	    <item id="15407" unique="1" chance="350"/> 
+	    <item id="15644" unique="1" chance="1200"/> 
+	    <item id="2123" chance="3000"/> 
+	    <item id="8906" unique="1" chance="400"/> <!-- Cerberus Shield-->
+	    <item id="9932" chance="700"/> <!-- FWB-->
+	    <item id="9777" unique="1" chance="500"/> <!-- Valar Kilt-->
+	</loot>
+</monster>

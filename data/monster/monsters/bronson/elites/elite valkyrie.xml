@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Valkyrie" nameDescription="uma elite valkyrie" race="blood" experience="0" speed="350" manacost="450">
+  <health now="570" max="570"/>
+  <look type="139" head="113" body="38" legs="76" feet="96" corpse="3065"/>
+  <targetchange interval="6000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+
+<flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="0"/>
+	<flag targetdistance="1"/>
+	<flag runonhealth="0"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1700" min="-20" max="-60"/>
+
+	<attack name="physical" interval="3250" chance="99" range="7" min="-15" max="-40">
+		<attribute key="shootEffect" value="spear"/>
+	</attack>
+
+</attacks>
+
+<defenses armor="0" defense="0"/>
+
+<immunities>
+	<immunity physical="0"/>
+	<immunity energy="0"/>
+	<immunity fire="0"/>
+	<immunity poison="0"/>
+	<immunity lifedrain="0"/>
+	<immunity paralyze="0"/>
+	<immunity outfit="0"/>
+	<immunity drunk="0"/>
+	<immunity invisible="1"/>
+</immunities>
+
+<voices interval="5000" chance="10">
+	<voice sentence="Stand still!"/>
+	<voice sentence="One more head for me!"/>
+	<voice sentence="Head off!"/>
+</voices>
+
+<loot capacity="500">
+	<item id="2086" chance="10000" actionId="2004"/> 
+</loot>
+
+</monster>

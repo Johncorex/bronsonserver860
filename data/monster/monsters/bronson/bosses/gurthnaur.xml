@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gurthnaur" nameDescription="Gurthnaur, a Sombra do Abismo" race="blood" experience="800000" speed="620" manacost="0">
+  <health now="200000" max="200000"/>
+  <look type="12" head="21" body="76" legs="116" feet="113" corpse="0"/>
+  <targetchange interval="5000" chance="40" />
+  <strategy attack="100" defense="0"/>
+  
+  <flags>
+    
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="1"/>
+	<flag targetdistance="1"/>
+	<flag staticattack="60"/>
+	<flag runonhealth="10000"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  
+  <attacks>
+    <!-- pancada principal -->
+	<attack name="melee" interval="1400" min="-700" max="-1250"/>
+
+    <!-- explosao de fogo em area -->
+	<attack name="fire" interval="1400" chance="50" radius="4" target="1" min="-500" max="-400">
+	  <attribute key="areaEffect" value="firearea"/>
+	  <attribute key="shootEffect" value="fire"/>
+	</attack>
+
+    <!-- firenova -->
+	<attack name="fire nova" interval="2000" chance="30"/>	
+	
+	<!-- physical vortex-->
+	<attack name="physical vortex" interval="2700" chance="40"/>
+	
+	<!-- implosion pull -->
+	<attack name="implosion pull" interval="3100" chance="50"/>
+	
+    <!-- enfraquecimento por calor: reduz velocidade -->
+    <attack name="speed" interval="3200" chance="60" range="7" target="1" radius="5" speedchange="-600" duration="4000">
+      <attribute key="areaEffect" value="SMALLCLOUDS"/>
+    </attack>
+  </attacks>
+
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="2100" chance="50" min="1000" max="1800"/>
+	<defense name="speed" interval="2000" chance="60" speedchange="300" duration="6000">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</defense>
+</defenses>
+
+<elements>
+	<element physicalPercent="15"/>
+	<element holyPercent="40"/>
+	<element deathPercent="60"/>
+	<element icePercent="40"/>
+	<element firePercent="60"/>
+	<element energyPercent="60"/>
+</elements>
+
+<immunities>
+	<immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="1"/>
+	<immunity drown="1"/>
+	<immunity ice="0"/>
+	<immunity holy="0"/>
+	<immunity death="0"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+<summons maxSummons="2">
+	<summon name="demon" interval="5000" chance="30" max="2"/>
+</summons>
+
+<voices interval="5000" chance="20">
+    <voice sentence="Chamas e sombra consumirao tudo!"/>
+    <voice sentence="Khazad-dum treme diante de Gurthnaur!"/>
+</voices>
+  
+<loot>
+	<item name="demon backpack" 			 	chance="100000"/>
+	<item name="ring of healing" 			 	chance="100000"/>
+	<item name="demonic essence" countmax="15"  chance="100000"/>
+	<item name="small emerald" countmax="30" 	chance="100000"/>
+	<item name="gold ring" 					 	chance="100000"/>
+	<item name="giant sword" 				 	chance="100000"/>	
+ 	<item name="boots of haste" 			 	chance="100000"/>
+	<item name="fire axe" 			 			chance="100000"/>
+	<item name="thunder hammer" 			 	chance="25000"/>
+	<item name="cristal impecavel"           	chance="5000"/>
+	<item name="nightmare shield" 				chance="40000"/> 
+	<item name="demon helmet" 					chance="50000"/> 
+	<item name="firewalker boots" 				chance="40000"/>
+	<item name="molten plate"      		 	 	chance="5000"/>
+	<item name="flaming arrow"            	 	chance="5000"/>	
+	<item name="valar kilt"            	 		chance="5000"/>
+  </loot>
+  
+  
+  <script>
+	<event name="RewardChestDeath"/>
+	<event name="RewardChestMonster"/>
+</script>
+
+</monster>

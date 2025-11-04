@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Legionnaire" nameDescription="a lizard legionnaire" race="blood" experience="4600" speed="370">
+	<health now="6200" max="6200" />
+	<look type="338" corpse="11276" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="10" />
+		<flag canwalkonenergy="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1900" min="-160" max="-280"/>
+		
+		<attack name="poison" interval="1800" chance="25" range="5" min="-100" max="-240">
+			<attribute key="shootEffect" value="earth"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		
+		<attack name="physical" interval="1700" chance="30" range="6" min="-150" max="-210">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+		
+		<attack name="poison" interval="2650" chance="30" target="1" range="6" spread="5" min="-100" max="-150">
+			<attribute key="shootEffect" value="earth"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		
+		<attack name="poisoncondition" interval="6100" chance="30" range="1" target="1" start="300">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+	</attacks>
+
+	<defenses armor="0" defense="0"/>
+	<elements>
+		<element firePercent="35"/>
+		<element earthPercent="85"/>
+		<element energyPercent="20"/>
+		<element icePercent="35"/>
+		<element holyPercent="30"/>
+	    <element deathPercent="30"/>
+	     <element physicalPercent="30"/>
+	</elements>
+	
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Tssss!" />
+	</voices>
+	<loot>
+		<item name="small diamond" countmax="2" chance="3001" />
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="65" chance="100000" />
+		<item name="lizard leather" chance="1970" />
+		<item name="lizard scale" countmax="3" chance="1980" />
+		<item name="strong health potion" chance="6880" />
+		<item name="red lantern" chance="1530" />
+		<item name="iron helmet" chance="5500" />
+		<item name="Pestilence Omega" chance="100" />
+		<item name="dragon scale boots" chance="300" />
+		<item name="dragon scale helmet" chance="200" />
+		<item name="crocodile boots" chance="1050" />
+	</loot>
+</monster>

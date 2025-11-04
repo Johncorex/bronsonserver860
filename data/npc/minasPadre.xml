@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Celest" script="marriagesystem.lua" walkinterval="0" floorchange="0">
+<health now="1000" max="1000"/>
+<look type="130" head="0" body="114" legs="114" feet="0" addons="0"/>
+
+<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="alianca,2121,10000" />
+		</parameters>
+</npc>

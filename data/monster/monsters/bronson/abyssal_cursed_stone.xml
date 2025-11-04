@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Abyssal Cursed Stone" nameDescription="a abyssal cursed stone" race="blood" experience="2150" speed="395">
+  <health now="2700" max="2700" />
+  <look type="67" corpse="6005" />
+  <targetchange interval="60000" chance="0" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag staticattack="80" />
+    <flag targetdistance="1" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" min="-30" max="-150" />
+    <attack name="strength" interval="1000" chance="13" target="1" min="-350" max="-585">
+      <attribute key="shootEffect" value="largerock" />
+    </attack>
+  </attacks>
+  <defenses armor="24]" defense="25" />
+  <elements>
+    <element energyPercent="98" />
+    <element physicalPercent="10" />
+    <element firePercent="98" />
+    <element icePercent="20" />
+    <element deathPercent="18" />
+    <element holyPercent="38" />
+  </elements>
+  <immunities>
+    <immunity earth="1" />
+    <immunity paralyze="1" />
+    <immunity lifedrain="1" />
+    <immunity drunk="1" />
+    <immunity drown="1" />
+    <immunity invisible="1" />
+  </immunities>
+  <voices interval="1700" chance="5">
+    <voice sentence="help" />
+    <voice sentence="to kil me?." />
+  </voices>
+  <loot>
+    <item name="gold coin" countmax="100" chance="100000" />
+    <item name="gold coin" countmax="100" chance="100000" />
+    <item name="gold coin" countmax="100" chance="100000" />
+    <item name="gold coin" countmax="100" chance="100000" />
+	<item name="war hammer" chance="1150" />
+	<item name="dwarven legs" chance="650" />
+    <item name="bag" chance="100000">
+      <inside>
+        <item name="small amethyst" countmax="3" chance="1000" />
+        <item name="aegis armor" chance="120" />
+        <item name="plate legs" chance="2011" />
+        <item name="warrior helmet" chance="750" />
+      </inside>
+    </item>
+  </loot>
+</monster>

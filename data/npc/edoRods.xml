@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Isdor" script="shop_wandsrods.lua" walkinterval="0" floorchange="0">
+  <health now="100" max="100"/>
+  <look type="130" head="30" body="24" legs="24" feet="77" addons="1"/>
+  <parameters>
+    <parameter key="message_greet" value="Olá, |PLAYERNAME|! Em que posso ajudar hoje?"/>
+  </parameters>
+</npc>

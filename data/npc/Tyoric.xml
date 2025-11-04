@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Tyoric" script="shop_ranged.lua" access="3" lookdir="2" speed="50" walkinterval="0">
+  <mana now="100" max="100"/>
+  <health now="1500" max="1500"/>
+  <look type="129" head="93" body="121" legs="26" feet="115" addons="3" corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola. Como posso te ajudar |PLAYERNAME|?"/>
+  </parameters>
+</npc>

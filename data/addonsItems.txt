@@ -1,0 +1,85 @@
+Citizen
+Addon 1 - Minotaur Leather 60
+Addon 2 - Chicken Feather 30, Honeycomb 30
+monstros: Minotaurs, Chicken, Wasp, Bear
+
+Hunter
+Addon 1 - Lizard Leather 100
+Addon 2 - Red dragon leather 30
+monstros: Lizard Sentinel, Lizard Templar, Lizard Snakecharmer, Lizard Chosen, Lizard Dragon Priest, Lizard High Guard, Lizard Legionnaire, Lizard Zaogun, Dragon Lord
+
+Mage
+Addon 1 - Holy Orchid 2, Red Piece of Cloth 40
+Addon 2 - 100k, Bat Wing 40, Vampire Dust 40
+monstros: High elf, Barbarian Bloodwalker, Fury, Hero
+
+
+Knight
+Addon 1 - Perfect Behemoth Fang 80
+Addon 2 - Ape Fur 100
+monstros: Behemoth, Mancubus, Kongra, Merklin, Sibang
+
+Nobleman
+Addon 1 - 100k, Crystal Coin 4, Giant Spider Silk 80
+Addon 2 - 200k, White Piece of Cloth 60, Dragon Scale Mail 1
+monstros: Giant Spider, Ghost, Spectre, Dragon Lord, Frost Dragon
+
+Summoner
+Addon 1 - Crystal Coin 2, Yellow Piece of Cloth 60
+Addon 2 - White piece of cloth 60, Dragon Scale helmet 1
+monstros: Mummy, Ghost, Spectre, Dragon Lord
+
+Warrior
+Addon 1 - Crystal Coin 1, Fish fin 30
+Addon 2 - Dragon Scale Legs 1, Beholder eye 30
+monstros: Quara Constrictor, Quara Hydromancer, Quara Mantassin, Quara Pincher, Quara Predator, Beholder, Elder Beholderm, Dragon
+
+Barbarian
+Addon 1 - 200k, Crystal Coin 1, Green piece of cloth 80
+Addon 2 - Demon Dust 1, Aegis Armor 1
+monstros: Elf Citizen, Baalrog, Abyssal Cursed Stone, Olog-hai, Smaug
+
+Druid
+Addon 1 - Bear paw 50, Wolf paw 50
+Addon 2 - Crystal Coin 2, Ape fur 100
+monstros: Bear, Polar Bear, Wolf, Winter Wolf, Kongra, Merklin, Sibang
+
+Wizard
+Addon 1 - Ankh 40, Demon Armor 1
+Addon 2 - Crystal Coin 2, ferumbras's hat 2
+monstros: Dark Monk, Monk, Demon, Ferumbras
+
+
+Oriental
+Addon 1 - Crystal Coin 2, Brown piece of cloth 40
+Addon 2 - Bear paw 60, Demon Legs 1
+monstros: Ghoul, Barbarian Headsplitter, Barbarian Skullhunter, Bear, Polar Bear, Demon
+
+Pirate
+Addon 1 - Crystal Coin 2, Hardened Bone 80
+Addon 2 - Giant Spider Silk 50, Demon Helmet 1
+monstros: Bonebeast, Undead Dragon, Giant Spider, Demon
+
+Beggar
+Addon 1 - Bread 15, Peg leg 40
+Addon 2 - Egg 25, Brass Armor 1
+monstros: Manuel(npc), Pirate Buccaneer, Pirate Corsair, Pirate Cutthroat, Pirate Marauder, Bandit, Rohirim, Hunter, Minotaur guard, Nomad
+
+
+Shaman
+Addon 1 - Red Dragon Leather 50
+Addon 2 - 100k, Eye patch 60, Salamander Shield 1
+monstros: Dragon Lord, Lizard Templar, Pirate Buccaneer, Pirate Corsair, Pirate Cutthroat, Pirate Marauder,
+
+
+
+Assassin
+Norseman
+Nightmare
+Jester
+Brotherhood
+Demon Hunter
+Yalaharian
+Newly Wed
+Warmaster
+Wayfarer

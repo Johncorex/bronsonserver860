@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spirit of Fire" nameDescription="a spirit of fire" race="blood" experience="4100" speed="450">
+	<health now="4000" max="4000" />
+	<look type="242" corpse="6324" />
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="250"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" min="0" max="-420" />
+		<attack name="firefield" interval="1700" chance="35" range="7" radius="3" target="0">
+			<attribute key="shootEffect" value="fire" />
+		</attack>
+		<attack name="fire" interval="1700" chance="30" target="0" length="8" spread="0" min="-80" max="-480">
+			<attribute key="areaEffect" value="fireattack" />
+		</attack>
+		<attack name="fire" interval="1700" chance="20" range="7" radius="3" target="-50" min="-160" max="-480">
+			<attribute key="areaEffect" value="fire" />
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+			<defense name="speed" interval="1000" chance="9" speedchange="290" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+			</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20" />
+		<element icePercent="-10" />
+	</elements>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="0"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item name="dragon necklace" chance="2000" />
+		<item name="small ruby" chance="3000" />
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="100" chance="80000" />
+		<item name="gold coin" countmax="46" chance="30000" />
+		<item name="chaos mace" chance="800" />
+		<item name="fireborn giant armor" chance="500" />
+		<item name="firewalker boots" chance="25" />
+		<item name="fire sword" chance="2300" />
+		<item name="fire axe" chance="800" />
+		<item name="devil helmet" chance="1800" />
+	</loot>
+	<voices interval="5000" chance="6">
+		<voice sentence="Feel the heat." />
+	</voices>
+</monster>

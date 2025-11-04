@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Rupture" nameDescription="a rupture" race="blood" experience="660000" speed="525" manacost="200">
+	<health now="120000" max="120000"/>
+	<look type="875" head="77" body="38" legs="59" feet="87" addons="0" corpse="26220" />
+	<targetchange interval="1700" chance="40" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+	</flags>
+
+			<attacks>
+		<attack name="melee" interval="1550" min="-880" max="-1350"/>
+		<attack name="manadrain" interval="1000" chance="7" range="7" min="-400" max="-700">
+			<attribute key="shootEffect" value="energy" />
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="fire" interval="1700" chance="10" target="0" length="8" spread="0" min="-1450" max="-2050">
+			<attribute key="areaEffect" value="fireattack" />
+		</attack>
+		<attack name="strength" interval="1000" chance="9" range="7">
+			<attribute key="shootEffect" value="largerock" />
+			<attribute key="areaEffect" value="energyarea" />
+		</attack>
+		<attack name="energy strike" interval="1700" chance="30" range="1" min="-1550" max="-2200">
+		</attack>
+		<attack name="fire" interval="1700" chance="8" range="7" radius="7" target="1" min="-750" max="-1550">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="strength" interval="1000" chance="8" radius="5" target="0">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="manadrain" interval="1700" chance="12" radius="8" target="0" min="-545" max="-1490">
+			<attribute key="areaEffect" value="yellowbubble" />
+		</attack>
+		<attack name="phantasm drown" interval="1700" chance="20" />
+		<attack name="drunk" interval="1700" chance="15" duration="10000" range="7" radius="6" target="0">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="20" radius="8" target="0" min="-950" max="-1230">
+			<attribute key="areaEffect" value="bluebubble" />
+		</attack>
+		<attack name="lifedrain" interval="1700" chance="10" length="8" spread="0" min="-750" max="-1200">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="renegade knight" interval="1700" chance="30" />
+		<attack name="choking fear drown" interval="1700" chance="20" />
+		<attack name="death" interval="1700" chance="20" radius="4" target="1" min="-890" max="-1100">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="bleedcondition" interval="1700" chance="20" target="1" radius="4" min="-150" max="-725">
+			<attribute key="shootEffect" value="throwingknife" />
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="vile grandmaster" interval="1700" chance="15" />
+		<attack name="manadrain" interval="1000" chance="10" radius="8" target="0" min="-500" max="-1700">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</attack>
+		<attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-1900" duration="60000">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="strength" interval="1000" chance="8" radius="5" target="0">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-800" max="-1250">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="50"/>
+    <elements>
+	<element physicalPercent="5"/>
+	<element physicalPercent="70"/>
+	<element icePercent="70"/>
+	<element poisonPercent="70"/>
+	<element firePercent="70"/>
+	<element energyPercent="70"/>
+	<element holyPercent="70"/>
+	<element deathPercent="70"/>
+</elements>
+	<immunities>
+		<immunity drown="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<summons maxSummons="6">
+		<summon name="Instable Breach BroodSummon" interval="1000" chance="15" max="6" />
+	</summons>
+	<voices interval="1700" chance="7">
+		<voice sentence="I AM RUPTURE!" yell="1" />
+	</voices>
+	<loot>
+	   <item id="2086" chance="1000000" actionId="7855"/>   <!-- KEY -->
+     <item id="2160" countmax="12" chance="53000"/>
+	 <item id="2343" chance="180000"/>   <!-- Full-->           
+      <item id="12642" chance="300"/>  <!-- Royal Draken Mail-->      
+	 <item id="8886" chance="1800"/> <!-- Monten Plate-->  
+     <item id="8906" chance="500"/> <!-- Cerberus Shield-->	
+     <item id="9933" chance="700"/> <!-- FireWalker Boots-->	 	 
+	 
+	</loot>
+</monster>

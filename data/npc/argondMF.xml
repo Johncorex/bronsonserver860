@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<npc name="Eknaran" script="MFblueberry.lua" access="3" walkinterval="10000">
+	<mana now="100" max="100"/>
+	<health now="1500" max="1500"/>
+	<look type="133" head="19" body="72" legs="91" feet="0" addon="2" corpse="3128"/>
+</npc>

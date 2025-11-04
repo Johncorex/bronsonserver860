@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fury" nameDescription="a fury" race="blood" experience="4000" speed="440">
+	<health now="4100" max="4100" />
+	<look type="149" head="94" body="77" legs="78" feet="79" addons="1" corpse="6083" />
+	<targetchange interval="4000" chance="40" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="70" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" min="0" max="-510" />
+		<attack name="fire" interval="1700" chance="30" length="8" spread="3" min="-200" max="-300">
+			<attribute key="areaEffect" value="explosionarea" />
+		</attack>
+		<attack name="death" interval="1700" chance="25" length="8" spread="0" min="-120" max="-700">
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="death" interval="1700" chance="25" radius="4" target="0" min="-120" max="-300">
+			<attribute key="areaEffect" value="redspark" />
+		</attack>
+		<attack name="lifedrain" interval="1700" chance="25" radius="3" target="0" min="-120" max="-300">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="death" interval="1700" chance="25" range="7" min="-125" max="-250">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+			<attribute key="areaEffect" value="smallclouds" />
+		</attack>
+		<attack name="speed" interval="1700" chance="25" range="7" speedchange="-800" duration="30000">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+			<attribute key="areaEffect" value="smallclouds" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="speed" interval="1700" chance="25" speedchange="800" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="30" />
+		<element holyPercent="30" />
+		<element deathPercent="-10" />
+		<element energyPercent="-10" />
+		<element earthPercent="-10" />
+		<element physicalPercent="-10" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+		<immunity fire="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ahhhhrrrr!" />
+		<voice sentence="Waaaaah!" />
+		<voice sentence="Carnage!" />
+		<voice sentence="Dieee!" />
+	</voices>
+	<loot>
+		<item id="2120" countmax="3" chance="16000" /><!-- small amethyst -->
+		<item id="2124" chance="610" /><!-- crystal ring-->
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="100" chance="90000" />
+		<item name="gold coin" countmax="69" chance="70000" />
+		<item name="platinum coin" countmax="4" chance="5800" />
+		<item name="terra rod" chance="40000" />
+		<item name="golden legs" chance="50" />
+		<item name="steel boots" chance="450" />
+		<item name="meat" chance="25000" />
+		<item name="orichalcum pearl" countmax="4" chance="1500" />
+		<item name="red piece of cloth" chance="6000" />
+		<item name="soul orb" chance="21500" />
+		<item name="demonic essence" chance="22500" />
+		<item name="concentrated demonic blood" countmax="3" chance="35000" />
+		<item name="assassin dagger" chance="1200" />
+		<item name="noble axe" chance="3000" />
+		<item name="great health potion" chance="20500" />
+		<item name="jalapeno pepper" countmax="4" chance="29280" />
+	</loot>
+</monster>

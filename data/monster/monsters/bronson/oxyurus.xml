@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Oxyurus" nameDescription="a oxyurus" race="blood" experience="5350" speed="490">
+	<health now="8500" max="8500" />
+	<look type="295" corpse="8947" />
+	<targetchange interval="40000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1800" min="-250" max="-552" />
+		<attack name="earth" interval="1800" chance="20" range="7" min="-240" max="-500">
+			<attribute key="shootEffect" value="poison" />
+		</attack>
+		<attack name="earth" interval="1800" chance="25" range="7" target="1" min="-300" max="-900">
+			<attribute key="shootEffect" value="smallearth" />
+			<attribute key="areaEffect" value="greenbubble" />
+		</attack>
+		<attack name="speed" interval="1700" chance="35" range="7" target="1" radius="4" speedchange="-450" duration="12000">
+			<attribute key="shootEffect" value="poison" />
+			<attribute key="areaEffect" value="smallplants" />
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="35">
+		<defense name="healing" interval="1700" chance="50" min="250" max="350">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="40" />
+		<element deathPercent="50" />
+		<element physicalPercent="15" />
+		<element holyPercent="50" />
+		<element firePercent="-5" />
+	</elements>
+	<immunities>
+		<immunity earth="1" />
+		<immunity energy="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Thhhe earth tremblesss..." />
+		<voice sentence="Oxyurusss feedsss..." yell="1" />
+		<voice sentence="You are nothing but dirt!" />
+		<voice sentence="Rumble... devour... repeat..." />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="100" chance="82300" />
+		<item name="gold coin" countmax="100" chance="85300" />
+		<item name="gold coin" countmax="100" chance="82300" />
+		<item name="gold coin" countmax="39" chance="82300" />
+		<item name="green mushroom" chance="28200" />
+		<item name="worm" countmax="39" chance="44800" />
+		<item name="small amethyst" chance="20000" />
+		<item name="small diamond" chance="20000" />
+		<item name="black pearl" chance="20000" />
+		<item name="great mana potion" chance="4000" />
+		<item name="snakebite rod" chance="1800" />
+		<item name="rose shield" chance="1000" />
+		<item name="spiked squelcher" chance="800" />
+		<item name="twilight veil legs" chance="100" />
+		<item name="warrior helmet" chance="2000" />
+		<item name="brass legs" chance="8000" />
+	</loot>
+</monster>

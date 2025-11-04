@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Beelzeboss" nameDescription="Beelzeboss" race="fire" experience="100000" speed="430" manacost="0">
+	<health now="48000" max="48000"/>
+	<look type="12" head="19" body="94" legs="78" feet="78" corpse="6068"/>
+	<targetchange interval="3000" chance="50" />
+	<strategy attack="100" defense="100"/>
+
+<flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag canpushcreatures="1"/>
+	<flag targetdistance="1"/>
+	<flag staticattack="90"/>
+	<flag runonhealth="0"/>
+</flags>
+	
+<attacks>
+	<attack name="melee" interval="1800" min="-340" max="-580"/>
+	
+	<attack name="death" interval="2000" chance="25" radius="8" target="0" min="-200" max="-600">
+		<attribute key="areaEffect" value="mortarea"/>
+	</attack>
+	<attack name="speed" interval="2000" chance="20" radius="6" target="0" speedchange="-500" duration="5000">
+		<attribute key="areaEffect" value="greenshimmer"/>
+	</attack>
+	<attack name="outfit" interval="5000" chance="30" range="7" monster="31" duration="4000">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</attack>
+	<attack name="firefield" interval="2100" chance="20" range="7" radius="7" target="1" min="-100" max="-200">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+	</attack>
+	<attack name="manadrain" interval="1600" chance="30" length="0" spread="3" min="-200" max="-300">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</attack>
+	<attack name="lifedrain" interval="1200" chance="30" radius="5" spread="0" min="-150" max="-300">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+</attacks>
+	
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="2000" chance="40" min="300" max="400">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+</defenses>
+	
+<elements><element physicalPercent="5"/>
+	<element physicalPercent="20"/>
+	<element icePercent="20"/>
+	<element poisonPercent="70"/>
+	<element firePercent="70"/>
+	<element energyPercent="25"/>
+	<element holyPercent="30"/>
+	<element deathPercent="70"/>
+</elements>
+
+<immunities>
+	<immunity drown="0"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+
+<voices interval="7000" chance="10">
+	<voice sentence="LET THE ROCK OFF BEGIN!" yell="1"/>
+	<voice sentence="Im the devil I love metal!" yell="1"/>
+	<voice sentence="I'm gonna fill you with my hot demon gel!" yell="1"/>
+	<voice sentence="Now I'm complete and my cock you will suck!" yell="1"/>
+</voices>
+
+<loot capacity="5000">
+	<item name="herugrin" countmax="1" chance="25000"/> 
+	<item name="herugrin" countmax="1" chance="25000"/> 
+	<item name="mastermind shield" countmax="1" chance="25000"/> 
+	<item name="mastermind shield" countmax="1" chance="25000"/> 
+	<item id="2086" chance="100000" actionId="2026"/> 
+</loot>
+
+</monster>

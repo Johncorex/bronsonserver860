@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocations>
+	<vocation id="0" clientid="0" name="None" description="none" gaincap="5" gainhp="5" gainmana="5" gainhpticks="6" gainhpamount="1" gainmanaticks="6" gainmanaamount="1" manamultiplier="4.0" attackspeed="600" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="0">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="2.0"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="1" clientid="0" name="sorcerer" description="sorcerer" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="4" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="1">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="2.0"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="5" clientid="0" name="master sorcerer" description="master sorcerer" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="6" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="1">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="2.0"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="9" clientid="0" name="archmage" description="archmage" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="8" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="5">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="2.0"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="13" clientid="0" name="arcane wizard" description="arcane wizard" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="6" gainmanaticks="1" gainmanaamount="12" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="9">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="2.0"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="2" clientid="0" name="druid" description="druid" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="4" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="2">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="1.8"/>
+		<skill id="2" multiplier="1.8"/>
+		<skill id="3" multiplier="1.8"/>
+		<skill id="4" multiplier="1.8"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="6" clientid="0" name="elder druid" description="elder druid" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="6" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="2">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="1.8"/>
+		<skill id="2" multiplier="1.8"/>
+		<skill id="3" multiplier="1.8"/>
+		<skill id="4" multiplier="1.8"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="10" clientid="0" name="celtic druid" description="celtic druid" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="8" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="6">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="1.8"/>
+		<skill id="2" multiplier="1.8"/>
+		<skill id="3" multiplier="1.8"/>
+		<skill id="4" multiplier="1.8"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="14" clientid="0" name="spirit healer" description="spirit healer" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="6" gainmanaticks="1" gainmanaamount="12" manamultiplier="1.1" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="10">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.5"/>
+		<skill id="1" multiplier="1.8"/>
+		<skill id="2" multiplier="1.8"/>
+		<skill id="3" multiplier="1.8"/>
+		<skill id="4" multiplier="1.8"/>
+		<skill id="5" multiplier="1.5"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="3" clientid="0" name="paladin" description="paladin" gaincap="20" gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="4" manamultiplier="1.5" attackspeed="1400" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="3">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="7" clientid="0" name="royal paladin" description="royal paladin" gaincap="20" gainhp="12" gainmana="15" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="1.5" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="3">
+		<formula meleeDamage="1.0" distDamage="1.05" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="11" clientid="0" name="medieval crossbowman" description="medieval crossbowman" gaincap="20" gainhp="12" gainmana="16" gainhpticks="1" gainhpamount="7" gainmanaticks="1" gainmanaamount="7" manamultiplier="1.5" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="7">
+		<formula meleeDamage="1.0" distDamage="1.1" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="15" clientid="0" name="executioner" description="executioner" gaincap="20" gainhp="13" gainmana="18" gainhpticks="1" gainhpamount="9" gainmanaticks="1" gainmanaamount="9" manamultiplier="1.5" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="11">
+		<formula meleeDamage="1.0" distDamage="1.15" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="21" clientid="0" name="elf" description="elf" gaincap="20" gainhp="10" gainmana="14" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="4" manamultiplier="1.3" attackspeed="1400" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="21">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="22" clientid="0" name="elf ranger" description="elf ranger" gaincap="20" gainhp="11" gainmana="15" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="1.3" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="21">
+		<formula meleeDamage="1.0" distDamage="1.05" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="23" clientid="0" name="high elf" description="hight elf" gaincap="25" gainhp="12" gainmana="17" gainhpticks="1" gainhpamount="7" gainmanaticks="1" gainmanaamount="7" manamultiplier="1.3" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="22">
+		<formula meleeDamage="1.0" distDamage="1.1" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="24" clientid="0" name="elven elite" description="elven elite" gaincap="25" gainhp="13" gainmana="20" gainhpticks="1" gainhpamount="9" gainmanaticks="1" gainmanaamount="9" manamultiplier="1.3" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="23">
+		<formula meleeDamage="1.0" distDamage="1.15" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.2"/>
+		<skill id="1" multiplier="1.2"/>
+		<skill id="2" multiplier="1.2"/>
+		<skill id="3" multiplier="1.2"/>
+		<skill id="4" multiplier="1.1"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="4" clientid="0" name="knight" description="knight" gaincap="25" gainhp="15" gainmana="5" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="2" manamultiplier="2.9" attackspeed="1400" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="4">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.05" armor="1.05"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="1.1"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="8" clientid="0" name="elite knight" description="elite knight" gaincap="25" gainhp="15" gainmana="5" gainhpticks="1" gainhpamount="6" gainmanaticks="1" gainmanaamount="4" manamultiplier="2.9" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="4">
+		<formula meleeDamage="1.05" distDamage="1.0" defense="1.05" armor="1.05"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="1.1"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="12" clientid="0" name="templar knight" description="templar knight" gaincap="25" gainhp="17" gainmana="6" gainhpticks="1" gainhpamount="8" gainmanaticks="1" gainmanaamount="5" manamultiplier="2.8" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="8">
+		<formula meleeDamage="1.1" distDamage="1.0" defense="1.05" armor="1.05"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="1.1"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="16" clientid="0" name="chaos knight" description="chaos knight" gaincap="25" gainhp="17" gainmana="6" gainhpticks="1" gainhpamount="12" gainmanaticks="1" gainmanaamount="7" manamultiplier="2.7" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="12">
+		<formula meleeDamage="1.15" distDamage="1.0" defense="1.05" armor="1.05"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="1.9"/>
+		<skill id="2" multiplier="1.1"/>
+		<skill id="3" multiplier="1.9"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="17" clientid="0" name="Miner" description="miner" gaincap="40" gainhp="13" gainmana="4" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="2" manamultiplier="2.9" attackspeed="1400" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="17">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="1.1"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="18" clientid="0" name="blacksmith" description="blacksmith" gaincap="45" gainhp="14" gainmana="5" gainhpticks="1" gainhpamount="6" gainmanaticks="1" gainmanaamount="4" manamultiplier="2.9" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="17">
+		<formula meleeDamage="1.05" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="1.1"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="19" clientid="0" name="weaponsmith" description="weaponsmith" gaincap="50" gainhp="16" gainmana="6" gainhpticks="1" gainhpamount="8" gainmanaticks="1" gainmanaamount="6" manamultiplier="2.8" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="18">
+		<formula meleeDamage="1.1" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="1.1"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="20" clientid="0" name="artisan weaponsmith" description="artisan weaponsmith" gaincap="50" gainhp="16" gainmana="8" gainhpticks="1" gainhpamount="8" gainmanaticks="1" gainmanaamount="8" manamultiplier="2.7" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="19">
+		<formula meleeDamage="1.15" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="1.1"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="2.0"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="25" clientid="0" name="orc" description="orc" gaincap="26" gainhp="10" gainmana="4" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="2" manamultiplier="2.9" attackspeed="1400" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="25">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="1.1"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="26" clientid="0" name="orc warrior" description="orc warrior" gaincap="28" gainhp="12" gainmana="5" gainhpticks="1" gainhpamount="6" gainmanaticks="1" gainmanaamount="4" manamultiplier="2.9" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="25">
+		<formula meleeDamage="1.05" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="1.1"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="27" clientid="0" name="orc berserker" description="orc berserker" gaincap="29" gainhp="14" gainmana="5" gainhpticks="1" gainhpamount="6" gainmanaticks="1" gainmanaamount="4" manamultiplier="2.9" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="26">
+		<formula meleeDamage="1.09" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="1.1"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="28" clientid="0" name="orc leader" description="orc leader" gaincap="29" gainhp="16" gainmana="5" gainhpticks="1" gainhpamount="8" gainmanaticks="1" gainmanaamount="5" manamultiplier="2.8" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="27">
+		<formula meleeDamage="1.12" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="1.1"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="29" clientid="0" name="orc warlord" description="orc warlord" gaincap="31" gainhp="18" gainmana="6" gainhpticks="1" gainhpamount="10" gainmanaticks="1" gainmanaamount="5" manamultiplier="2.8" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="28">
+		<formula meleeDamage="1.15" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="1.1"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+	<vocation id="30" clientid="0" name="orc general" description="orc general" gaincap="32" gainhp="18" gainmana="6" gainhpticks="1" gainhpamount="14" gainmanaticks="1" gainmanaamount="6" manamultiplier="2.7" attackspeed="1400" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="29">
+		<formula meleeDamage="1.18" distDamage="1.0" defense="1.0" armor="1.0"/>
+		<skill id="0" multiplier="1.1"/>
+		<skill id="1" multiplier="2.0"/>
+		<skill id="2" multiplier="2.0"/>
+		<skill id="3" multiplier="1.1"/>
+		<skill id="4" multiplier="1.4"/>
+		<skill id="5" multiplier="1.1"/>
+		<skill id="6" multiplier="1.1"/>
+	</vocation>
+</vocations>

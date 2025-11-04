@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Btopar" script="shop_runes.lua" access="3" lookdir="2" speed="50" walkinterval="0">
+  <mana now="1000" max="1000"/>
+  <health now="1000" max="1000"/>
+  <look type="133" head="39" body="48" legs="76" feet="3" addons="2" corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola. Como posso te ajudar |PLAYERNAME|?"/>
+  </parameters>
+</npc>

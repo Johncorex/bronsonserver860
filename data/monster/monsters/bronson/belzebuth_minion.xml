@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Belzebuth Minion" nameDescription="a belzebuth minion" race="venom" experience="9600" speed="355" manacost="0">
+  <health now="14000" max="14000" />
+  <look type="79" corpse="6021" />
+  <targetchange interval="5000" chance="8" />
+  <strategy attack="100" defense="0" />
+  <flags>
+    <flag summonable="0" />
+    <flag attackable="1" />
+    <flag hostile="1" />
+    <flag illusionable="0" />
+    <flag convinceable="0" />
+    <flag pushable="0" />
+    <flag canpushitems="1" />
+    <flag canpushcreatures="1" />
+    <flag targetdistance="1" />
+    <flag staticattack="90" />
+    <flag runonhealth="0" />
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" min="-430" max="-500" />
+    <attack name="poison" interval="1000" chance="12" range="7" min="-415" max="-435">
+      <attribute key="shootEffect" value="poison" />
+      <attribute key="areaEffect" value="poison" />
+    </attack>
+    <attack name="lifedrain" interval="1700" chance="34" length="7" spread="0" min="-500" max="-599">
+      <attribute key="areaEffect" value="greenbubble" />
+    </attack>
+    <attack name="earth" interval="1000" chance="15" radius="5" target="0" min="-500" max="-600">
+      <attribute key="areaEffect" value="poison" />
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="20">
+    <defense name="speed" interval="1000" chance="8" speedchange="350" duration="9000">
+      <attribute key="areaEffect" value="redshimmer" />
+    </defense>
+  </defenses>
+  <elements>
+    <element energyPercent="55" />
+    <element earthPercent="80" />
+    <element icePercent="20" />
+    <element firePercent="-10" />
+    <element holyPercent="60" />
+    <element deathPercent="30" />
+  </elements>
+  <immunities>
+    <immunity invisible="1" />
+    <immunity paralyze="1" />
+  </immunities>
+  <loot>
+    <item name="gold coin" countmax="100" chance="100000" />
+	<item name="gold coin" countmax="100" chance="100000" />
+    <item name="pestilence omega" chance="150" />
+    <item name="daramanian waraxe" chance="1300" />
+    <item name="scarab shield" chance="4400" />
+    <item name="bag" chance="100000">
+      <inside>
+        <item name="gold coin" countmax="1" chance="100000" />
+        <item name="small amethyst" countmax="3" chance="1030" />
+        <item name="gold coin" countmax="100" chance="60000" />
+        <item name="scarab amulet" chance="1011" />
+        <item name="ancient amulet" chance="1300" />
+        <item name="winged helmet" chance="450" />
+      </inside>
+    </item>
+  </loot>
+</monster>

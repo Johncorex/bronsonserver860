@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Hellfire" nameDescription="um elite hellfire" race="fire" experience="0" speed="330" manacost="0">
+  <health now="11400" max="11400"/>
+  <look type="243" head="0" body="0" legs="0" feet="0" corpse="6324"/>
+  <targetchange interval="8000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  
+<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="3"/>
+    <flag runonhealth="0"/>
+</flags>
+
+<attacks>
+	<attack name="firefield" interval="3300" chance="55" range="7" radius="3" target="1">
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+
+	<attack name="fire" interval="1700" chance="65" range="7" radius="2" target="1" min="-150" max="-220">
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+</attacks>
+
+<defenses armor="0" defense="0"/>
+
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+
+<loot capacity="900">
+	<item id="2086" chance="20000" actionId="2023"/> 
+</loot>
+
+</monster>

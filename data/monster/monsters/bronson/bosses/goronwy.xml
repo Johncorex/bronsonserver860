@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Goronwy" nameDescription="goronwy" race="undead" experience="20000" speed="280" manacost="0" script="boss.lua">
+  <health now="18000" max="18000"/>
+  <look type="261" head="20" body="30" legs="40" feet="50" corpse="7282"/>
+  <targetchange interval="5000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+	
+<flags>
+    
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="1"/>
+	<flag staticattack="50"/>
+	<flag lightlevel="0"/>
+	<flag lightcolor="0"/>
+	<flag targetdistance="1"/>
+	<flag runonhealth="0"/>
+</flags>
+  
+<attacks>
+	<attack name="ice" interval="1700" range="1" target="1" min="-80" max="-160"/>
+	
+	<attack name="ice" interval="2700" chance="99" range="7" target="1" min="-150" max="-200">
+		<attribute key="shootEffect" value="ice"/>
+		<attribute key="areaEffect" value="icearea"/>
+	</attack>
+	
+	<attack name="energy" interval="2400" chance="25" target="0" radius="8" min="-150" max="-200">
+		<attribute key="areaEffect" value="bigclouds"/>
+	</attack>
+	
+	<attack name="speed" interval="6200" chance="40" range="7" target="1" radius="6" speedchange="-700" duration="8000">
+		<attribute key="shootEffect" value="ice"/>
+		<attribute key="areaEffect" value="giantice"/>
+	</attack>
+	
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="1000" chance="100" min="20" max="30"/>
+</defenses>
+  
+<elements><element physicalPercent="5"/>
+	<element physicalPercent="20"/>
+	<element icePercent="60"/>
+	<element poisonPercent="20"/>
+	<element firePercent="20"/>
+	<element energyPercent="20"/>
+	<element holyPercent="20"/>
+	<element deathPercent="20"/>
+</elements>
+
+<immunities>
+	<immunity drown="0"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+
+<voices interval="1700" chance="5">
+</voices>
+  
+<loot>
+	<item id="2086" chance="100000" actionId="2036"/> <!-- magic key -->
+	<item name="skull helmet" chance="30000"/> 
+	<item name="skull helmet" chance="30000"/> 
+	<item name="frost razor" chance="30000"/> 
+	<item name="frost razor" chance="30000"/> 
+	<item name="small diamond" countmax="30" chance="100000"/> 	
+	<item name="small diamond" countmax="30" chance="100000"/> 
+	<item name="blue backpack" chance="100000"> 
+		<item name="small diamond" countmax="30" chance="100000"/> 
+		<item name="small diamond" countmax="30" chance="100000"/> 
+		<item name="small diamond" countmax="30" chance="100000"/> 
+		<item name="shield of honour" chance="30000"/> 
+		<item name="starlight amulet" chance="30000"/> 
+		<item name="haunted blade" chance="30000"/> 
+	</item>
+</loot>
+
+</monster>

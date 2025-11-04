@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<npc name="Midas" script="default.lua" access="3" walkinterval="0">
+	<mana now="100" max="100"/>
+	<health now="1500" max="1500"/>
+	<look type="128" head="58" body="19" legs="68" feet="116" addon="1" corpse="3128"/>
+	
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="aol,2173,10000;energy ring,2167,400;time ring,2169,600;stealth ring,2165,200;dwarven ring,2213,500;" />
+		
+		<parameter key="message_greet" value="Eu vendo Amulet of Loss (aol) e rings."/>
+	</parameters>
+	
+</npc>

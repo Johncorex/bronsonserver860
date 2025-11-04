@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Capitan Jhon" script="default.lua" walkinterval="0" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="151" head="94" body="94" legs="114" feet="94" addons="3" corpse="2212"/>
+    <parameters>
+        <parameter key="module_travel" value="1"/>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|! Eu posso te levar para {lizard city}. "/>
+        <parameter key="travel_destinations" value="lizard city,643,1632,6,500;"/>
+    </parameters>
+</npc>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<npc name="Elrond" script="prefRiv.lua" access="3">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="144" head="97" body="19" legs="105" feet="19" addon="0" corpse="3128"/>
+     <parameters>
+	<parameter key="module_shop" value="1"/>
+	<parameter key="message_greet" value="Ola! Eu sou o Elrond, você gostaria de morar na cidade de Rivendell?"/>
+ </parameters>
+</npc>

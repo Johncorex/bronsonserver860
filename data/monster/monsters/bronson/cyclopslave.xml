@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<monster name="Cyclopslave" nameDescription="a cyclopslave" race="blood" experience="1750" speed="350" manacost="525">
+  <health now="1900" max="1900"/>
+  <look type="280" head="0" body="0" legs="0" feet="0" addons="0" corpse="7848"/>
+  <targetchange interval="4000" chance="10"/>
+  <strategy nearest="70" damage="30"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    
+    <flag illusionable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="95"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+    
+    
+    <flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+  <light level="0" color="0"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="I will crush all intruders!"/>
+    <voice sentence="Why a misarable creature like you are here?"/>
+  </voices>
+  <loot>
+	<item name="gold coin" countmax="50" chance="40000"/>
+    <item name="dreaded cleaver" chance="190"/>
+    <item name="beholder shield" chance="1250"/>
+    <item name="battle hammer" chance="1550"/>
+	<item name="plate armor" chance="4050"/>
+    <item name="platinum coin" chance="5000" countmax="3"/>
+    <item name="meat" chance="50430" countmax="2"/>
+    <item name="strong health potion" chance="1020"/>
+    <item name="cyclops toe" chance="4750"/>
+  </loot>
+  <attacks>
+    <attack name="melee" interval="1800" chance="100" min="-96" max="-280"/>
+    <attack name="physical" interval="1700" chance="99" range="7" min="-130" max="-250" shootEffect="largerock" target="0">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="speed" interval="6000" chance="25" speedchange="-600" range="6" shootEffect="poison" effect="redshimmer" target="1" duration="5000"/>
+  </attacks>
+  <defenses armor="45" defense="40">
+  </defenses>
+  <elements>
+    <element physicalPercent="10"/>
+    <element energyPercent="15"/>
+    <element earthPercent="15"/>
+    <element firePercent="10"/>
+    <element lifedrainPercent="25"/>
+    <element manadrainPercent="25"/>
+    <element drownPercent="100"/>
+    <element icePercent="10"/>
+    <element holyPercent="10"/>
+    <element deathPercent="-10"/>
+  </elements>
+  <immunities>
+    <immunity name="paralyze"/>
+    <immunity name="invisible"/>
+  </immunities>
+</monster>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raids>
+	<raid name="gurthnaur" file="gurthnaur_behedemon.xml" interval2="999999" margin="9999" enabled="no"/>
+</raids>

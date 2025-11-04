@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Amazon" nameDescription="uma elite amazon" race="blood" experience="0" speed="260" manacost="390">
+  <health now="330" max="330"/>
+  <look type="137" head="113" body="120" legs="95" feet="115" corpse="3065"/>
+  <targetchange interval="6000" chance="50"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="3"/>
+    <flag runonhealth="0"/>
+  </flags>
+
+<attacks>
+	<attack name="melee" interval="1700" min="-20" max="-50"/>
+
+	<attack name="physical" interval="3500" chance="99" range="6" min="-15" max="-40">
+		<attribute key="shootEffect" value="throwingknife"/>
+	</attack>
+</attacks>
+
+<defenses armor="0" defense="0"/>
+
+<immunities>
+	<immunity physical="0"/>
+	<immunity energy="0"/>
+	<immunity fire="0"/>
+	<immunity poison="0"/>
+	<immunity lifedrain="0"/>
+	<immunity paralyze="0"/>
+	<immunity outfit="0"/>
+	<immunity drunk="0"/>
+	<immunity invisible="1"/>
+</immunities>
+
+<voices interval="5000" chance="10">
+	<voice sentence="Yeeee ha!"/>
+	<voice sentence="Your head will be mine!"/>
+</voices>
+
+<loot capacity="800">
+	<item id="2086" chance="10000" actionId="2002"/> 
+</loot>
+
+</monster>

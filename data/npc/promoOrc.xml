@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<npc name="General Khaz" script="promoOrc.lua" access="3" lookdir="2" walkinterval="10000">
+	<mana now="10" max="10"/>
+	<health now="5000" max="5000"/>
+	<look type="2" head="39" body="86" legs="86" feet="20" addon="0" corpse="2967"/>
+</npc>

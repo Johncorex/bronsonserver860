@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Succubus" nameDescription="a sucubbus" race="fire" experience="290" speed="320">
+	<health now="430" max="430" />
+	<look type="237" corpse="6364" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="4" />
+		<flag staticattack="90" />
+		<flag runonhealth="400" />
+		<flag canwalkonenergy="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" min="0" max="-100" poison="160" />
+		<attack name="fire" interval="1700" chance="20" range="7" radius="4" target="1" min="-40" max="-80">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="fire" interval="1700" chance="10" range="7" radius="2" target="1" min="-30" max="120">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="fireattack" />
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="10">
+		<defense name="healing" interval="1700" chance="10" min="10" max="25">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="1700" chance="15" speedchange="300" duration="2000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+		<defense name="invisible" interval="1700" chance="10" duration="1000">
+			<attribute key="areaEffect" value="teleport" />
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="10" />
+		<element earthPercent="50" />
+		<element icePercent="-10" />
+		<element holyPercent="-10" />
+	</elements>
+	<immunities>
+		<immunity fire="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Muahaha!" />
+		<voice sentence="He he he." />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="necrotic rod" chance="1830" />
+		<item name="blank rune" countmax="2" chance="16666" />
+		<item name="guardian shield" chance="1600" />
+		<item name="cleaver" chance="8830" />
+		<item name="magma coat" chance="400" />
+		<item name="devil helmet" chance="800" />
+	</loot>
+</monster>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<npc name="Templar Knight" script="promoKnight.lua" access="5" walkinterval="0">
+	<mana now="10" max="10"/>
+	<health now="10" max="10"/>
+	<look type="131" head="0" body="0" legs="0" feet="0" addon="0" corpse="3128"/>
+</npc>

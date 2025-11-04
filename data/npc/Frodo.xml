@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Frodo" script="frodo.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="133" head="78" body="115" legs="23" feet="37" addons="0"/>
+<parameters>
+<parameter key="message_greet" value="Ola {|PLAYERNAME|},  sou Frodo, sobrinho de Bilbo Bolseiro. Estou vivendo momentos de grande aventuras e perigos na Terra Media, enfrentado os mais diversos desafios. E indo para a Mordor, um hobbit possuido chamado Gollum roubou o anel e se encontra escondido em alguma parte da terra media. Poderia me ajudar a recupera-lo derrotando Gollum ?" />
+</parameters>
+</npc>

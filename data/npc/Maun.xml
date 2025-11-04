@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<npc name="Maun" script="default.lua" walkinterval="1700" floorchange="0">
+  <health now="100" max="100" />
+  <look type="289" head="38" body="19" legs="21" feet="20" addons="0" />
+  <parameters>
+	  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Ola. Como posso te ajudar |PLAYERNAME|?"/>
+<parameter key="shop_buyable" value="shovel,2554,20;rope,2120,20;fishing rod,2580,50;backpack,1988,10;pick,2553,20;carpenter hammer,2557,30;iron hammer,2422,100;parcel,2595,29;label,2599,1;letter,2597,20"/>
+	</parameters>
+</npc>

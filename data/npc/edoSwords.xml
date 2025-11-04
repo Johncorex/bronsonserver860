@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Asdrubal" script="shop_swords.lua" walkinterval="0" floorchange="0">
+  <mana now="100" max="100"/>
+  <health now="1500" max="1500"/>
+  <look type="131" head="41" body="28" legs="28" feet="95" addons="1" corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Hello, |PLAYERNAME|! How can I help you today?"/>
+  </parameters>
+</npc>

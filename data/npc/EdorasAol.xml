@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<npc name="Philipe" script="default.lua" access="3" walkinterval="0">
+	<mana now="100" max="100"/>
+	<health now="1500" max="1500"/>
+	<look type="131" head="114" body="0" legs="94" feet="78" addons="0" corpse="3128"/>
+	
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="aol,2173,20000" />
+		
+		<parameter key="message_greet" value="Eu vendo Amulet of Loss (aol)"/>
+	</parameters>
+	
+</npc>

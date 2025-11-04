@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<npc name="Cepheus" script="QuestEdo1.lua" access="5" walkinterval="10000">
+	<mana now="10" max="10"/>
+	<health now="1000" max="1000"/>
+	<look type="152" head="79" body="38" legs="38" feet="62" addon="0" corpse="3128"/>
+</npc>

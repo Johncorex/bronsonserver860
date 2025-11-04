@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
+	<globalevent type="record" name="PlayerRecord" script="record.lua" />
+	<globalevent name="Bosses Respawn" interval="3600000" script="bosses.lua" />
+	<globalevent name="gesior-shop-system" interval="30000" script="gesior-shop-system.lua" />
+	
+	<!-- Anuncios a cada 10 minutos -->
+	<globalevent name="Announcer" interval="1800000" script="announcer.lua"/>
+
+	<!--
+	<globalevent name="timer_example" time="12:00:00" script="my_script.lua" />
+	-->
+	<globalevent name="Server Save1" time="05:28:00" script="serversave.lua" />
+	<globalevent name="Server Save2" time="06:28:00" script="serversave.lua" />
+	<globalevent name="Server Save3" time="07:28:00" script="serversave.lua" />
+	<globalevent name="Server Save4" time="08:28:00" script="serversave.lua" />
+	<globalevent name="Server Save5" time="09:28:00" script="serversave.lua" />
+	<globalevent name="Server Save6" time="10:28:00" script="serversave.lua" />
+	<globalevent name="Server Save7" time="11:28:00" script="serversave.lua" />
+	<globalevent name="Server Save8" time="12:28:00" script="serversave.lua" />
+	<globalevent name="Server Save9" time="13:28:00" script="serversave.lua" />
+	<globalevent name="Server Save10" time="14:28:00" script="serversave.lua" />
+	<globalevent name="Server Save11" time="15:28:00" script="serversave.lua" />
+	<globalevent name="Server Save12" time="16:28:00" script="serversave.lua" />
+	<globalevent name="Server Save13" time="17:28:00" script="serversave.lua" />
+	<globalevent name="Server Save14" time="18:28:00" script="serversave.lua" />
+	<globalevent name="Server Save15" time="19:28:00" script="serversave.lua" />
+	<globalevent name="Server Save16" time="20:28:00" script="serversave.lua" />
+	<globalevent name="Server Save17" time="21:28:00" script="serversave.lua" />
+	<globalevent name="Server Save18" time="22:28:00" script="serversave.lua" />
+	<globalevent name="Server Save19" time="23:28:00" script="serversave.lua" />
+	<globalevent name="Server Save20" time="00:28:00" script="serversave.lua" />
+	<globalevent name="Server Save21" time="01:28:00" script="serversave.lua" />
+	<globalevent name="Server Save22" time="02:28:00" script="serversave.lua" />
+	<globalevent name="Server Save23" time="03:28:00" script="serversave.lua" />
+	<globalevent name="Server Save24" time="04:28:00" script="serversave.lua" />
+
+	<!-- server save QUIET -->
+	<globalevent name="SilentSave00" time="00:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave01" time="00:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave02" time="00:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave03" time="01:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave04" time="01:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave05" time="01:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave06" time="02:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave07" time="02:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave08" time="02:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave09" time="03:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave10" time="03:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave11" time="03:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave12" time="04:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave13" time="04:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave14" time="04:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave15" time="05:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave16" time="05:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave17" time="05:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave18" time="06:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave19" time="06:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave20" time="06:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave21" time="07:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave22" time="07:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave23" time="07:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave24" time="08:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave25" time="08:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave26" time="08:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave27" time="09:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave28" time="09:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave29" time="09:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave30" time="10:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave31" time="10:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave32" time="10:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave33" time="11:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave34" time="11:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave35" time="11:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave36" time="12:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave37" time="12:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave38" time="12:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave39" time="13:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave40" time="13:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave41" time="13:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave42" time="14:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave43" time="14:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave44" time="14:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave45" time="15:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave46" time="15:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave47" time="15:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave48" time="16:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave49" time="16:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave50" time="16:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave51" time="17:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave52" time="17:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave53" time="17:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave54" time="18:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave55" time="18:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave56" time="18:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave57" time="19:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave58" time="19:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave59" time="19:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave60" time="20:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave61" time="20:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave62" time="20:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave63" time="21:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave64" time="21:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave65" time="21:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave66" time="22:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave67" time="22:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave68" time="22:45:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave69" time="23:00:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave70" time="23:15:00" script="serversave_quiet.lua" />
+	<globalevent name="SilentSave71" time="23:45:00" script="serversave_quiet.lua" />
+
+
+</globalevents>

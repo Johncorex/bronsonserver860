@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Engin" script="shop_tools.lua" walkinterval="0" floorchange="0">
+  <mana now="100" max="100"/>
+  <health now="1500" max="1500"/>
+  <look type="128" head="2" body="116" legs="48" feet="78" addons="2" corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola, |PLAYERNAME|! Como posso te ajudar hoje?"/>
+  </parameters>
+</npc>

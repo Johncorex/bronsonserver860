@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Tonop" script="shop_axes.lua" access="3" walkinterval="0">
+  <mana now="100" max="100"/>
+  <health now="1500" max="1500"/>
+  <look type="143" head="96" body="45" legs="81" feet="0" addons="3" corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola. Como posso te ajudar |PLAYERNAME|?"/>
+  </parameters>
+</npc>

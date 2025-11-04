@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Olog-hai" nameDescription="Olog-hai" race="blood" experience="35000" speed="620" manacost="0">
+  <health now="35000" max="35000"/>
+  <look type="55" head="0" body="0" legs="0" feet="0" corpse="2931"/>
+  <targetchange interval="8000" chance="8"/>
+  <strategy attack="100" defense="100"/>
+
+<flags>
+	<flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+	<flag staticattack="60"/>
+    <flag runonhealth="0"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+</flags>
+
+<attacks>
+	<attack name="melee" interval="1700" min="-200" max="-480"/>
+
+	<attack name="physical" interval="1900" chance="99" range="6" min="-250" max="-390">
+		<attribute key="shootEffect" value="largerock"/>
+	</attack>
+	
+	<attack name="physical" interval="1700" chance="33" target="0" radius="5" min="-150" max="-450">
+		<attribute key="areaEffect" value="groundshaker"/>
+	</attack>
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="speed" interval="6000" chance="35" speedchange="300" duration="5000">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</defense>
+	
+	<defense name="healing" interval="1500" chance="50" min="40" max="150"/>
+</defenses>
+
+<elements>
+	<element physicalPercent="70"/>
+	<element icePercent="15"/>
+	<element poisonPercent="20"/>
+	<element firePercent="30"/>
+	<element energyPercent="15"/>
+	<element holyPercent="15"/>
+	<element deathPercent="30"/>
+</elements>
+
+<immunities>
+	<immunity drown="1"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+  <voices interval="5000" chance="10">
+    <voice sentence="Vou esmaga-lo!"/>
+    <voice sentence="Tente correr inseto!"/>
+    <voice sentence="Hahaha, isso eh tudo?!" yell="1"/>
+  </voices>
+
+  <loot>
+
+	<item name="small emerald" countmax="5" chance="20000"/> 
+	<item name="horned helmet" chance="1800"/> 
+	<item name="tower shield" chance="35000"/> 
+	<item name="aegis armor" chance="4000"/> 
+	<item name="steel boots" chance="25000"/> 
+	<item name="war hammer" chance="20000"/> 
+	<item name="giant sword" chance="30500"/> 
+	<item name="starlight amulet" chance="3000"/>
+		<item name="purple backpack" chance="100000"> 
+			<item name="platinum coin" countmax="5" chance="50000" /> 
+			<item name="gold coin" countmax="100" chance="70000" /> 
+			<item name="gold coin" countmax="100" chance="70000" /> 
+			<item name="gold coin" countmax="100" chance="70000" /> 
+			<item name="power bolt" countmax="1" chance="20000"/> 
+			<item name="crowbar" chance="100000"/> 	
+			<item name="double axe" chance="80000"/> 	
+	</item>
+	
+  </loot>
+
+</monster>

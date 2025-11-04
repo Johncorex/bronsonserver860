@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Druid" script="addon druid.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="148" head="35" body="60" legs="1" feet="85" addons="3"/>
+</npc>

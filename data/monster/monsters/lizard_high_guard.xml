@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard High Guard" nameDescription="a lizard high guard" race="blood" experience="5000" speed="440">
+	<health now="6700" max="6700" />
+	<look type="337" corpse="11272" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="1" />
+		<flag canwalkonfire="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1900" min="-304" max="-448"/>
+		
+		<attack name="poison" interval="2300" chance="30" range="7" radius="3" target="1" min="-200" max="-280">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		
+		<attack name="physical" interval="2500" chance="30" range="7" radius="3" target="1" min="-250" max="-300">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		
+		<attack name="poison" interval="2800" chance="35" target="0" radius="2" min="-200" max="-250">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		
+		<attack name="poisoncondition" interval="6100" chance="30" range="1" target="1" start="300">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+	</attacks>
+
+	<defenses armor="0" defense="0"/>
+	
+	<elements>
+		<element firePercent="30"/>
+		<element earthPercent="85"/>
+		<element energyPercent="20"/>
+		<element icePercent="30"/>
+		<element holyPercent="30"/>
+	    <element deathPercent="30"/>
+	      <element physicalPercent="30"/>
+	</elements>
+	
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hizzzzzzz!" />
+		<voice sentence="To armzzzz!" />
+		<voice sentence="Engage zze aggrezzor!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="27" chance="100000" />
+		<item name="small emerald" countmax="4" chance="5520" />
+		<item name="platinum coin" countmax="2" chance="4900" />
+		<item name="dragon scale helmet" chance="250" />
+		<item name="lizard leather" chance="2000" />
+		<item name="lizard scale" chance="2000" />
+		<item name="strong health potion" chance="4925" />
+		<item name="great health potion" chance="2070" />
+		<item name="red lantern" chance="3220" />
+		<item name="bunch of ripe rice" chance="3950" />
+		<item name="terra legs" chance="1000" />
+		<item name="knight legs" chance="1200" />
+		<item name="steel boots" chance="700" />
+		<item name="dragon scale mail" chance="400" />
+		<item name="pestilence omega" chance="120" />
+		<item name="high guard shoulderplates" chance="4150" />
+	</loot>
+</monster>

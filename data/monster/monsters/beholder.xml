@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bonelord" nameDescription="a bonelord" race="venom" experience="170" speed="150">
+	<health now="260" max="260" />
+	<look type="17" corpse="5992" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="4" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1700" min="0" max="-5" />
+		<attack name="energy" interval="1700" chance="5" range="7" min="-15" max="-45">
+			<attribute key="shootEffect" value="energy" />
+		</attack>
+		<attack name="fire" interval="1700" chance="5" range="7" min="-25" max="-45">
+			<attribute key="shootEffect" value="fire" />
+		</attack>
+		<attack name="death" interval="1700" chance="5" range="7" min="-30" max="-50">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+			<attribute key="areaEffect" value="smallclouds" />
+		</attack>
+		<attack name="earth" interval="1700" chance="5" range="7" min="-5" max="-45">
+			<attribute key="shootEffect" value="poison" />
+		</attack>
+		<attack name="death" interval="1700" chance="5" range="7" min="-5" max="-50">
+			<attribute key="shootEffect" value="death" />
+		</attack>
+		<attack name="lifedrain" interval="1700" chance="5" range="7" min="0" max="-45">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="manadrain" interval="1700" chance="5" range="7" min="-5" max="-35" />
+	</attacks>
+	<defenses armor="5" defense="5" />
+	<elements>
+		<element icePercent="20" />
+		<element firePercent="-10" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity earth="1" />
+		<immunity lifedrain="1" />
+	</immunities>
+	<summons maxSummons="6">
+		<summon name="Skeleton" interval="1700" chance="20" max="6" />
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Eye for eye!" />
+		<voice sentence="Here's looking at you!" />
+		<voice sentence="Let me take a look at you!" />
+		<voice sentence="You've got the look!" />
+		<voice sentence="I've got to look!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="48" chance="99000" />
+		<item name="longsword" chance="18000" />
+		<item name="morning star" chance="17000" />
+		<item name="small flask of eyedrops" chance="5000" />
+		<item id="2175" chance="5000" /><!-- spellbook -->
+		<item name="steel shield" chance="8000" />
+		<item name="two handed sword" chance="4950" />
+		<item name="beholder eye" chance="2000" />
+		<item name="terra rod" chance="1010" />
+		<item name="mana potion" chance="800" />
+		<item name="beholder shield" chance="310" />
+	</loot>
+</monster>

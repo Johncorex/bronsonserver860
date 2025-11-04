@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Dark Monk" nameDescription="um elite dark monk" race="blood" experience="0" speed="330" manacost="480">
+  <health now="570" max="570"/>
+  <look type="225" head="0" body="0" legs="0" feet="0" corpse="3058"/>
+  <targetchange interval="5000" chance="5"/>
+  <strategy attack="70" defense="20"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+
+<attacks>
+	<attack name="melee" interval="1700" skill="50" attack="37"/>
+	<attack name="lifedrain" interval="1000" chance="12" range="1" min="-25" max="-49"/>
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="1800" chance="12" min="25" max="49">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+	<defense name="speed" interval="4000" chance="10" speedchange="300" duration="3000">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</defense>
+</defenses>
+
+<immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+  <voices interval="5000" chance="10">
+    <voice sentence="This is where your path will end!"/>
+    <voice sentence="Your end has come."/>
+    <voice sentence="You are no match for us!"/>
+  </voices>
+  
+<loot capacity="500">
+	<item id="2086" chance="10000" actionId="2012"/> 
+</loot>
+
+</monster>

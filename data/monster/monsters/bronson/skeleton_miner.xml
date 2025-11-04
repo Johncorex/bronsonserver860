@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Skeleton Miner" nameDescription="a skeleton miner" race="undead" experience="185" speed="190" manacost="0">
+    <health now="230" max="230" />
+    <look type="232" head="0" body="0" legs="0" feet="0" addons="0" corpse="6310" />
+    
+    <targetchange interval="4000" chance="15" />
+    <strategy attack="100" />
+
+    <flags>
+        <flag summonable="0" />
+        <flag attackable="1" />
+        <flag hostile="1" />
+        <flag convinceable="0" />
+        <flag pushable="0" />
+        <flag illusionable="0" />
+        <flag canpushitems="1" />
+        <flag canpushcreatures="1" />
+        <flag staticattack="90" />
+        <flag targetdistance="1" />
+        <flag runonhealth="30" />
+        <flag canwalkonenergy="0" />
+        <flag canwalkonfire="1" />
+        <flag canwalkonpoison="1" />
+    </flags>
+
+    <light level="0" color="0" />
+
+    <voices interval="5000" chance="10">
+        <voice sentence="Mouuuurn meeee!" />
+        <voice sentence="Forgive Meee!" />
+        <voice sentence="Help meee!" />
+    </voices>
+
+    <loot>
+        <item name="ruby necklace" chance="2000" /> <!-- ruby necklace -->
+        <item name="white pearl" chance="5000" countmax="3" /> <!-- white pearl -->
+        <item name="black pearl" chance="6500" countmax="3" /> <!-- black pearl -->
+        <item name="gold coin" chance="100000" countmax="100" /> <!-- gold coin -->
+        <item name="stone skin amulet" chance="800" /> <!-- stone skin amulet -->
+        <item name="blank rune" chance="35250" countmax="3" /> <!-- blank rune -->
+        <item name="skull staff" chance="900" /> <!-- skull staff -->
+        <item name="amulet of loss" chance="200" /> <!-- amulet of loss -->
+    </loot>
+
+    <attacks>
+        <attack name="melee" interval="1700" chance="100" min="-90" max="-45" />
+        <attack name="death" interval="1700" chance="10" range="1" radius="3" target="0">
+            <attribute key="areaEffect" value="redspark" />
+        </attack>
+        <attack name="speed" interval="1700" chance="20" range="7" target="1" speedchange="-800" duration="4000">
+            <attribute key="areaEffect" value="smallclouds" />
+        </attack>
+    </attacks>
+
+    <defenses armor="28" defense="30">
+    </defenses>
+
+    <elements>
+        <element earthPercent="99" />
+        <element holyPercent="-25" />
+        <element deathPercent="90" />
+    </elements>
+
+    <immunities>
+        <immunity name="paralyze" />
+        <immunity name="invisible" />
+    </immunities>
+</monster>

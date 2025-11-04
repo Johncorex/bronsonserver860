@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="elite wyvern" nameDescription="um elite wyvern" race="blood" experience="0" speed="370" manacost="0">
+  <health now="2400" max="2400"/>
+  <look type="239" corpse="6302"/>
+  <targetchange interval="7000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  
+<attacks>
+	<attack name="melee" interval="1700" min="-70" max="-170" poison="22"/>
+
+	<attack name="poison" interval="3000" chance="12" length="8" spread="3" min="-30" max="-120">
+		<attribute key="areaEffect" value="poison"/>
+	</attack>
+	
+	<attack name="melee" interval="1700" chance="12" length="8" spread="3" min="-30" max="-120">
+		<attribute key="areaEffect" value="rednote"/>
+	</attack>
+	
+	<attack name="drunk" interval="4000" chance="2" range="7">
+		<attribute key="shootEffect" value="poison"/>
+		<attribute key="areaEffect" value="rednote"/>
+	</attack>
+</attacks>
+
+<defenses armor="0" defense="0">
+	<defense name="healing" interval="2200" chance="22" min="34" max="60">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+</defenses>
+  
+<immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+<voices interval="5000" chance="10">
+</voices>
+
+<loot>
+	<item id="2086" chance="7000" actionId="2021"/> 
+</loot>
+
+</monster>

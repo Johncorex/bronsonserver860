@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wormageddon" nameDescription="Wormageddon" race="blood" experience="30000" speed="560" manacost="0">
+	<health now="36000" max="36000"/>
+    <look type="295" corpse="8947"/>
+    <targetchange interval="3000" chance="55"/>
+    <strategy attack="100" defense="0"/>
+	
+    <flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+		<flag canwalkonenergy="1"/>
+		<flag canwalkonfire="1"/>
+		<flag canwalkonpoison="1"/>
+    </flags>
+	
+<elements><element physicalPercent="5"/>
+	<element physicalPercent="10"/>
+	<element icePercent="10"/>
+	<element poisonPercent="10"/>
+	<element firePercent="10"/>
+	<element energyPercent="10"/>
+	<element holyPercent="10"/>
+	<element deathPercent="10"/>
+</elements>
+
+<immunities>
+	<immunity drown="0"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+	
+    <attacks>
+		<attack name="melee" interval="1700" min="-110" max="-680"/>
+			
+		<attack name="earth" interval="2100" chance="30" range="7" target="1" min="-260" max="-430">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	
+		<attack name="earth" interval="2100" chance="35" length="5" spread="0" target="0" min="-160" max="-240">
+			<attribute key="areaEffect" value="bigplants"/>
+		</attack>
+	
+		<attack name="speed" interval="1700" chance="20" range="7" target="1" speedchange="-850" duration="7000">
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+	</attacks>
+	
+    <defenses armor="0" defense="0">
+		<defense name="healing" interval="2500" chance="55" min="120" max="320">
+			<attribute key="areaEffect" value="holyarea"/>
+		</defense>	
+	</defenses>
+	
+	<summons maxSummons="6">
+	<summon name="carrion worm" interval="3000" chance="35" max="6"/>
+	</summons>
+	
+    <loot>
+      <item name="terra boots" chance="30600"/> 
+	  <item name="scale armor" chance="100000"/> 
+	  <item name="warrior helmet" chance="31000"/> 
+	  <item name="demonrage sword" chance="1500"/> 
+	  <item name="terra rod" chance="40000"/> 
+	  <item name="motaba scepter" chance="4000"/> 
+      <item name="worm" countmax="45" chance="60000" /> 
+	  <item name="camouflage backpack" chance="100000">
+				<item name="platinum coin" countmax="20" chance="50000"/>
+				<item name="small amethyst" countmax="3" chance="50000"/> 
+				<item name="black pearl" countmax="3" chance="50000"/> 
+				<item name="white pearl" countmax="3" chance="50000"/> 
+				<item name="small diamond" countmax="3" chance="50000"/> 
+				<item name="great mana potion" chance="50000"/>
+				<item name="stone skin amulet" chance="20000"/> 
+		</item>
+    </loot>
+	
+</monster>
+
+
+

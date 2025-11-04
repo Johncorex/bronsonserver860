@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Drained Baalrog" nameDescription="Baalrog" race="fire" experience="180000" speed="550" manacost="0">
+  <health now="65000" max="65000"/>
+  <look type="243" head="0" body="0" legs="0" feet="0" corpse="6324"/>
+  <targetchange interval="3000" chance="50" />
+  <strategy attack="100" defense="0"/>
+  
+  <flags>
+    
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+	<flag staticattack="30"/>
+	<flag canwalkonenergy="1"/>
+    <flag canwalkonfire="1"/>
+    <flag canwalkonpoison="1"/>
+  </flags>
+
+<attacks>
+	<attack name="melee" interval="1800" min="-500" max="-1000"/>
+	
+	<attack name="firefield" interval="3300" chance="55" range="7" radius="5" target="1">
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+
+	<attack name="fire" interval="1800" chance="35" range="7" radius="3" target="1" min="-350" max="-500">
+		<attribute key="shootEffect" value="flammingarrow"/>
+		<attribute key="areaEffect" value="firearea"/>
+    </attack>
+	
+	<attack name="fire" interval="1800" chance="99" range="7" radius="2" target="1" min="-119" max="-180">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="explosionarea"/>
+	</attack>
+	
+	<attack name="fire" interval="3000" chance="30" range="7" radius="11" target="0" min="-900" max="-1400">
+			<attribute key="areaEffect" value="fireattack"/>
+	</attack>
+	
+	<attack name="physical" interval="1800" chance="15" length="8" spread="0" min="-1100" max="-1500">
+		<attribute key="areaEffect" value="poff"/>
+	</attack>
+</attacks>
+
+	<defenses armor="0" defense="0">
+		<defense name="healing" interval="3200" chance="50" min="500" max="600">
+			<attribute key="areaEffect" value="redfirework"/>
+		</defense>
+		<defense name="healing" interval="2100" chance="60" min="200" max="300"/>
+	</defenses>
+
+<elements>
+	<element physicalPercent="30"/>
+	<element icePercent="30"/>
+	<element poisonPercent="20"/>
+	<element firePercent="80"/>
+	<element energyPercent="30"/>
+	<element holyPercent="20"/>
+	<element deathPercent="40"/>
+</elements>
+
+<immunities>
+	<immunity drown="0"/>
+	<immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+</immunities>
+  
+<summons maxSummons="3">
+	<summon name="spirit of fire" interval="1700" chance="35" max="2"/>
+	<summon name="hellfire fighter" interval="2500" chance="25" max="2"/>
+	<summon name="fire elemental" interval="1700" chance="50" max="1"/>
+</summons>
+
+<loot>
+    <item name="molten plate"  chance="40" />
+	<item name="firewalker boots"  chance="80" />
+	<item name="baalrog robe" chance="100" />
+	<item name="demon legs" chance="300" />
+	<item name="fire sword" chance="30000" />
+	<item name="thunder hammer" chance="150" />
+	<item name="phoenix shield" chance="200" />
+	<item name="fire axe" chance="10000" />
+	<item name="red backpack" chance="100000">
+		<item name="wand of inferno" chance="21000" /> 
+		<item name="crystal coin" chance="5000" countmax="1" />
+		<item name="red gem" chance="40000" />
+		<item name="starlight amulet" chance="1200" />
+		<item name="burning heart" chance="700" />
+		<item name="talon" chance="10000" countmax="10" />
+		<item name="small ruby" chance="10000" countmax="10" />
+		<item name="demon dust" chance="80000" countmax="1" />
+	</item>
+
+</loot>
+
+</monster>

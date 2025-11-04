@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Erpahon" script="shop_shields.lua" access="3" walkinterval="0">
+  <mana now="10" max="10"/>
+  <health now="10" max="10"/>
+  <look type="268" head="66" body="76" legs="116" feet="124" addons="2"  corpse="3128"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola. Como posso te ajudar |PLAYERNAME|?"/>
+  </parameters>
+</npc>

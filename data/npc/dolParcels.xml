@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Nortop" script="shop_mail.lua" walkinterval="1700" floorchange="0">
+  <health now="100" max="100"/>
+  <look type="128" head="115" body="0" legs="38" feet="115" addons="0"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola |PLAYERNAME|! Como posso te ajudar hoje?"/>
+  </parameters>
+</npc>

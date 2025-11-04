@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Zaogun" nameDescription="a lizard zaogun" race="blood" experience="5800" speed="420">
+	<health now="7000" max="7000" />
+	<look type="343" corpse="11284" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1900" min="-200" max="-320"/>
+		
+		<attack name="melee" interval="8000" min="-240" max="-440" chance="55">
+			<attribute key="areaEffect" value="stun"/>
+		</attack>
+		
+		<attack name="poison" interval="2300" chance="30" range="7" radius="3" target="1" min="-250" max="-300">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		
+		<attack name="physical" interval="2500" chance="30" range="7" radius="3" target="1" min="-250" max="-300">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		
+		<attack name="physical" interval="2800" chance="35" target="0" radius="2" min="-200" max="-250">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		
+		<attack name="poisoncondition" interval="6100" chance="30" range="1" target="1" start="300">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+
+	</attacks>
+
+	<defenses armor="0" defense="0"/>
+	
+	<elements>
+		<element firePercent="30"/>
+		<element earthPercent="85"/>
+		<element energyPercent="20"/>
+		<element icePercent="30"/>
+		<element holyPercent="30"/>
+	    <element deathPercent="30"/>
+	     <element physicalPercent="30"/>
+	</elements>
+	
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="gold coin" countmax="68" chance="99000" />
+		<item name="small emerald" countmax="5" chance="8830" />
+		<item name="knight armor" chance="1100" />
+		<item name="crusader helmet" chance="1100" />
+		<item name="lizard leather" chance="14360" />
+		<item name="lizard scale" chance="12520" />
+		<item name="strong health potion" chance="1900" />
+		<item name="great health potion" countmax="3" chance="1000" />
+		<item name="drachaku" chance="150" />
+		<item name="dragon scale legs" chance="150" />
+		<item name="terra boots" chance="1100" />
+	</loot>
+</monster>

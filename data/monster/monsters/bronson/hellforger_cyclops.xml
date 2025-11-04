@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hellforger Cyclops" nameDescription="a Hellforger Cyclops" race="blood" experience="2600" speed="395" manacost="490">
+  <health now="3400" max="3400"/>
+  <look type="277" head="20" body="30" legs="40" feet="50" corpse="7741"/>
+  <targetchange interval="60000" chance="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1700" skill="70" attack="70"/>
+    <attack name="strength" interval="1000" chance="11" min="-400" max="-420">
+      <attribute key="shootEffect" value="whirlwindclub"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="25" range="7" radius="4" target="1" max="-480">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="24" defense="25"/>
+  <elements>
+    <element energyPercent="55"/>
+    <element earthPercent="80"/>
+    <element icePercent="50"/>
+    <element holyPercent="55"/>
+    <element deathPercent="55"/>
+  </elements>
+  <immunities>
+    <immunity invisible="1"/>
+    <immunity fire="1"/>
+    <immunity paralyze="1"/>
+  </immunities>
+  <voices interval="1700" chance="5">
+    <voice sentence="help"/>
+    <voice sentence="Forjarei seus ossos."/>
+  </voices>
+  <loot>
+    <item name="gold coin" countmax="100" chance="100000"/>
+	<item name="gold coin" countmax="100" chance="98000"/>
+    <item name="gold coin" countmax="100" chance="100000"/>
+    <item name="ham" countmax="5" chance="50000"/>
+    <item name="small amethyst" countmax="3" chance="7000"/>
+    <item name="chaos mace" chance="800"/>
+	<item name="warrior helmet" chance="950" />
+    <item name="war hammer" chance="2800"/>
+    <item name="iron hammer" chance="8300"/>
+	<item name="plate armor" chance="6300"/>
+  </loot>
+</monster>

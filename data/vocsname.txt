@@ -1,0 +1,36 @@
+        <vocation name="Sorcerer"/>
+		<vocation name="Master Sorcerer"/>
+		<vocation name="Archmage"/>
+		<vocation name="Arcane Wizard"/>
+        
+        <vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Celtic Druid"/>
+		<vocation name="Spirit Healer"/>
+        
+        <vocation name="Elf"/>
+		<vocation name="Elf Ranger"/>
+		<vocation name="High Elf"/>
+		<vocation name="Elven Elite"/>
+        
+        <vocation name="Paladin"/>
+		<vocation name="Royal Paladin"/>
+		<vocation name="Medieval Crossbowman"/>
+		<vocation name="Executioner"/>
+        
+        <vocation name="Knight"/>
+		<vocation name="Elite Knight"/>
+		<vocation name="Templar Knight"/>
+		<vocation name="Chaos Knight"/>
+		
+		<vocation name="Miner"/>
+		<vocation name="Blacksmith"/>
+		<vocation name="Weaponsmith"/>
+		<vocation name="Artisan Weaponsmith"/>
+		
+		<vocation name="Orc"/>
+		<vocation name="Orc Warrior"/>
+		<vocation name="Orc Berserker"/>
+		<vocation name="Orc Leader"/>
+		<vocation name="Orc Warlord"/>
+		<vocation name="Orc General"/>
